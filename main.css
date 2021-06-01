@@ -1,0 +1,72 @@
+:root {
+	
+	--the-green: rgb(51, 181, 51);
+	--off-white: rgb(245, 245, 245);
+	--the-dark: rgb(20, 20, 20);
+}
+
+body {
+	background-color: var(--off-white);
+	font-family: Trebuchet MS, serif;
+	text-align: justify;
+}
+
+h1, h2, h3 {
+	font-family: Didot, serif;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--the-dark);
+	color: var(--off-white);
+	height: 46.5vw;
+}
+
+.head-img {
+	width: 100vw;
+	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
+}
+
+h1 {
+	position: absolute;
+	z-index: 2;
+	top: 34.5vw;
+	font-size: 3.75vw;
+	padding-left: 2.5vw;
+}
+
+.navbar {
+	position: absolute;
+	top: 41.5vw;
+	padding-left: 2.5vw;
+}
+
+a {
+	color: var(--off-white);
+}
+
+h3 {
+	display: inline-block;
+	font-size: 1.5vw;
+}
+
+a:hover {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
+.current {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
+main {
+	position: absolute;
+	top: 44.5vw;
+	left: 0;
+	width: 95vw;
+	padding: 2.5vw;
+}
