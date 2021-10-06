@@ -1,9 +1,10 @@
 :root {
-	
 	--the-green: rgb(51, 181, 51);
 	--off-white: rgb(245, 245, 245);
 	--the-dark: rgb(20, 20, 20);
 }
+
+/* 1. Generals */
 
 body {
 	background-color: var(--off-white);
@@ -11,9 +12,24 @@ body {
 	text-align: justify;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: Didot, serif;
 }
+
+h1 {
+	position: absolute;
+	z-index: 2;
+	top: 34.5vw;
+	font-size: 3.75vw;
+	padding-left: 2.5vw;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 1.5vw;
+}
+
+/* 2. Header */
 
 header {
 	position: absolute;
@@ -27,15 +43,8 @@ header {
 
 .head-img {
 	width: 100vw;
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
-}
-
-h1 {
-	position: absolute;
-	z-index: 2;
-	top: 34.5vw;
-	font-size: 3.75vw;
-	padding-left: 2.5vw;
 }
 
 .navbar {
@@ -48,11 +57,6 @@ a {
 	color: var(--off-white);
 }
 
-h3 {
-	display: inline-block;
-	font-size: 1.5vw;
-}
-
 a:hover {
 	color: var(--the-green);
 	cursor: pointer;
@@ -63,10 +67,32 @@ a:hover {
 	cursor: pointer;
 }
 
+/* 3. Main */
+
 main {
 	position: absolute;
 	top: 44.5vw;
 	left: 0;
 	width: 95vw;
 	padding: 2.5vw;
+}
+
+.selbox {
+	width: 70%;
+	height: 50px;
+	border: 1px solid var(--the-dark);
+	border-radius: 5px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	line-height: 0px;
+	overflow: hidden;
+}
+
+.plus, .minus {
+	text-align: right;
+	line-height: 0px;
+}
+
+.minus {
+	display: none;
 }
