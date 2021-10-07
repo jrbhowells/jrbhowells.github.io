@@ -77,15 +77,18 @@ main {
 	padding: 2.5vw;
 }
 
-.selbox {
-	width: 70%;
+.cbox {
+	width: 63.5%;
 	height: 50px;
 	border: 1px solid var(--the-dark);
 	border-radius: 5px;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	line-height: 0px;
 	overflow: hidden;
+}
+
+.cbox h2, h4 {
+	line-height: 0px;
 }
 
 .plus, .minus {
@@ -93,6 +96,38 @@ main {
 	line-height: 0px;
 }
 
+.plus:hover, .minus:hover {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
 .minus {
 	display: none;
+}
+
+hr {
+	border: none;
+	border-top: 0.5px solid var(--the-dark);
+}
+
+.cbox div {
+	border-left: 2px solid var(--the-dark);
+	padding-left: 2%;
+}
+
+.cbox div:hover {
+	border-left: 4px solid var(--the-green);
+	color: var(--the-green);
+	padding-left: calc(2% - 2px);
+	cursor: pointer;
+}
+
+.cbox h3 {
+	line-height: 0px;
+}
+
+.cbox p {
+	vertical-align: top;
+	margin: 0;
+	
 }
