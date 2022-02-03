@@ -212,15 +212,18 @@
                 document.getElementById('reps-').style.display = 'block';
             };
 
-            const focs = document.getElementsByClassName("focus");
+            function closeAll () {
+                document.getElementById("coffee-f").style.display = 'none';
+                document.getElementById("website-f").style.display = 'none';
+            };
 
             document.getElementById("coffee").onclick = function() {
-                for (var i = 0; i < focs.length; i++) {focs[i].style.display = 'none';};
+                closeAll();
                 document.getElementById("coffee-f").style.display = 'block';
             };
 
             document.getElementById("website").onclick = function() {
-                for (var i = 0; i < focs.length; i++) {focs[i].style.display = 'none';};
+                closeAll;
                 document.getElementById("website-f").style.display = 'block';
             };
         </script>
