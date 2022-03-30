@@ -10,6 +10,7 @@ body {
 	background-color: var(--off-white);
 	font-family: Trebuchet MS, serif;
 	text-align: justify;
+    margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -17,51 +18,77 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	position: absolute;
+    position: relative;
+    margin: 0.7vw;
 	z-index: 2;
-	top: 34.5vw;
 	font-size: 3.75vw;
 	padding-left: 2.5vw;
+    margin-left: 0vw;
+    margin-top: -5.5vw;
+	animation-name: fade-head;
+    animation-duration: 1s;
 }
 
 h3 {
 	display: inline-block;
 	font-size: 1.5vw;
+    margin-top: 0.5vw;
 }
 
 /* 2. Header */
 
 header {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background-color: var(--the-dark);
 	color: var(--off-white);
-	height: 46.5vw;
 }
 
 .logo {
 	width: 5%;
 	position: absolute;
 	top: 1vw;
-	left: 1vw
+	left: 1vw;
 }
 
 .head-img {
 	width: 100vw;
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
+	animation-name: fade-head;
+    animation-duration: 1s;
+}
+
+.head-img-narrow {
+	width: 100vw;
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
+	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
+	animation-name: fade-head;
+    animation-duration: 1s;
+}
+
+@keyframes growing-head {
+    from {height: 13.471vw;}
+    to {height: 42.139vw;}
+}
+
+@keyframes shrinking-head {
+    from {height: 42.139vw;}
+    to {height: 13.471vw;}
 }
 
 .navbar {
-	position: absolute;
-	top: 41.5vw;
+    height: 4vw;
+    padding-top: 0;
 	padding-left: 2.5vw;
+	animation-name: fade-head;
+    animation-duration: 1s;
 }
 
 a {
 	color: var(--off-white);
+    text-decoration: none;
 }
 
 a:hover {
@@ -74,14 +101,18 @@ a:hover {
 	cursor: pointer;
 }
 
+@keyframes fade-head {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* 3. Main */
 
 main {
-	position: absolute;
-	top: 44.5vw;
 	left: 0;
 	width: 95vw;
 	padding: 2.5vw;
+    padding-top: 0.5vw;
 }
  /* 3.1. Projects page */
 
@@ -156,4 +187,15 @@ right {
 	padding: 2.5%;
 	padding-top: 0%;
 	display: none;
+}
+
+/* 4. Footer */
+
+footer {
+	background-color: var(--the-dark);
+	color: var(--off-white);
+	font-family: Didot, serif;
+	height: 6vw;
+	line-height: 6vw;
+	padding-left: 5vw;
 }
