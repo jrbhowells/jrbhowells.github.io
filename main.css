@@ -56,7 +56,7 @@ header {
 	width: 100vw;
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
-	animation-name: fade-head;
+	animation-name: fade-head-grow;
     animation-duration: 1s;
 }
 
@@ -64,18 +64,20 @@ header {
 	width: 100vw;
 	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
 	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.4) 95%, rgba(0,0,0,0) 100%);
-	animation-name: fade-head;
+	animation-name: fade-head-shrink;
     animation-duration: 1s;
 }
 
-@keyframes growing-head {
-    from {height: 13.471vw;}
-    to {height: 42.139vw;}
+@keyframes fade-head-grow {
+    0% {height: 13.471vw; opacity: 0;}
+    20% {height: 42.139vw; opacity: 0;}
+	100% {opacity: 1;}
 }
 
-@keyframes shrinking-head {
-    from {height: 42.139vw;}
-    to {height: 13.471vw;}
+@keyframes fade-head-shrink {
+    0% {height: 42.139vw; opacity: 0;}
+    20% {height: 13.471vw; opacity: 0;}
+	100% {opacity: 1;}
 }
 
 .navbar {
@@ -102,8 +104,9 @@ a:hover {
 }
 
 @keyframes fade-head {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 /* 3. Main */
@@ -117,12 +120,12 @@ main {
  /* 3.1. Projects page */
 
  left {
+	position: relative;
 	float: left;
-	width: 50%;
+	width: 48.75%;
 }
 
 .cbox {
-	width: 90%;
 	height: 50px;
 	border: 1px solid var(--the-dark);
 	border-radius: 5px;
@@ -177,8 +180,9 @@ hr {
 }
 
 right {
+	position: relative;
 	float: right;
-	width: 50%;
+	width: 48.75%;
 }
 
 .focus {
@@ -192,6 +196,7 @@ right {
 /* 4. Footer */
 
 footer {
+	position: relative;
 	background-color: var(--the-dark);
 	color: var(--off-white);
 	font-family: Didot, serif;
