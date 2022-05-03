@@ -35,6 +35,32 @@ h3 {
     margin-top: 0.5vw;
 }
 
+click {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+
+	height: 30px;
+	line-height: 30px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	border: 2px solid var(--the-dark);
+	border-radius: 1.5vw;
+
+	font-family: Didot, serif;
+	font-size: large;
+}
+
+click:hover {
+	border: 2px solid var(--off-white);
+	color: var(--off-white);
+	background-color: var(--the-green);
+	cursor: pointer;
+}
+
 /* 2. Header */
 
 header {
@@ -205,4 +231,16 @@ footer {
 	height: 6vw;
 	line-height: 6vw;
 	padding-left: 5vw;
+}
+
+/* TEMPORARY Webapp */
+.WA {
+	width: 46%;
+	display: inline-block;
+	padding: 2%;
+}
+.WA2 {
+	width: 21%;
+	display: inline-block;
+	padding: 2%;
 }
