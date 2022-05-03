@@ -1,0 +1,95 @@
+:root {
+	--the-green: rgb(51, 181, 51);
+	--off-white: rgb(245, 245, 245);
+	--the-dark: rgb(20, 20, 20);
+}
+
+/* 1. Generals */
+
+body {
+	background-color: var(--off-white);
+	font-family: Trebuchet MS, serif;
+	text-align: justify;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+	font-family: Didot, serif;
+}
+
+h1 {
+	/* position: absolute;
+    top: 34.5vw; */
+    position: relative;
+    margin: 0.7vw;
+	z-index: 2;
+	font-size: 3.75vw;
+	padding-left: 2.5vw;
+    margin-left: 0vw;
+    margin-top: -5.5vw;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 1.5vw;
+    margin-top: 0.5vw;
+}
+
+/* 2. Header */
+
+header {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--the-dark);
+	color: var(--off-white);
+	/* height: 46.5vw; */
+}
+
+.logo {
+	width: 5%;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+}
+
+.head-img {
+	width: 100vw;
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
+	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
+}
+
+.navbar {
+	/* position: absolute;
+	top: 41.5vw; */
+    height: 4vw;
+    padding-top: 0;
+	padding-left: 2.5vw;
+}
+
+a {
+	color: var(--off-white);
+    text-decoration: none;
+}
+
+a:hover {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
+.current {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
+/* 3. Main */
+
+main {
+	/* position: absolute;
+	top: 44.5vw; */
+	left: 0;
+	width: 95vw;
+	padding: 2.5vw;
+    padding-top: 0.5vw;
+}
