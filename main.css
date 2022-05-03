@@ -35,7 +35,7 @@ h3 {
     margin-top: 0.5vw;
 }
 
-click {
+.button {
 	display: inline-block;
 	position: relative;
 	left: 50%;
@@ -50,11 +50,12 @@ click {
 	border: 2px solid var(--the-dark);
 	border-radius: 1.5vw;
 
+	color: var(--the-dark);
 	font-family: Didot, serif;
 	font-size: large;
 }
 
-click:hover {
+.button:hover {
 	border: 2px solid var(--off-white);
 	color: var(--off-white);
 	background-color: var(--the-green);
