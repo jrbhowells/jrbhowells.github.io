@@ -43,11 +43,11 @@
                     </div>
                     <br>
                     <div id="box">
-                        <h3>Secret Compartment Box</h3>
+                        <h3 class="ooa">Secret Compartment Box</h3>
                     </div>
                     <br>
                     <div id="bench">
-                        <h3>Recycled Teak Garden Bench *</h3>
+                        <h3 class="ooa">Recycled Teak Garden Bench *</h3>
                     </div>
                     <br>
                 </div>
@@ -68,7 +68,7 @@
                     </div>
                     <br>
                     <div id="weather">
-                        <h3>Machine Learning Weather Forecast</h3>
+                        <h3 class="ooa">Machine Learning Weather Forecast</h3>
                     </div>
                     <br>
                     <div id="calendar">
@@ -93,15 +93,15 @@
                     <p>Some other random concept projects.</p>
                     <br>
                     <div id="ecohome">
-                        <h3>Fully sustainable Eco-Home</h3>
+                        <h3 class="ooa">Fully sustainable Eco-Home</h3>
                     </div>
                     <br>
                     <div id="careware">
-                        <h3>CareWare: Space Saving in Small Kitchens *</h3>
+                        <h3 class="ooa">CareWare: Space Saving in Small Kitchens *</h3>
                     </div>
                     <br>
                     <div id="ciab">
-                        <h3>Christmas in a Box Service *</h3>
+                        <h3 class="ooa">Christmas in a Box Service *</h3>
                     </div>
                     <br>
                 </div>
@@ -118,15 +118,15 @@
                     <p>Coursework investigations and reports.</p>
                     <br>
                     <div id="reveng">
-                        <h3>RevEng: Reverse Engineerring *</h3>
+                        <h3 class="ooa">RevEng: Reverse Engineerring *</h3>
                     </div>
                     <br>
                     <div id="carbon">
-                        <h3>Carbon-neutral Housing Study *</h3>
+                        <h3 class="ooa">Carbon-neutral Housing Study *</h3>
                     </div>
                     <br>
                     <div id="vehicle">
-                        <h3>Vehicle Aerodynamics Simulation *</h3>
+                        <h3 class="ooa">Vehicle Aerodynamics Simulation *</h3>
                     </div>
                     <br>
                 </div>
@@ -135,22 +135,15 @@
                 <!--Woodwork-->
                 <div class="focus" id="coffee-f">
                     <h2>Coffee Table</h2>
-                    <img src="img//table/table-3.JPG" style="width: 100%;">
-                    <table style="border-collapse: collapse;">
-                        <td style="width: 50%;">
-                            <img src="img/table/table-1.JPG" style="width: 100%;">
-                        </td>
-                        <td style="vertical-align: top;">
-                            <img src="img/table/table-2.JPG" style="width: 100%;">
-                            <p>
-                                Part of my A-level course, I made this coffee table in walnut and ash, with a tempered
-                                glass top. The joinery was by far the most complex task: the bottom of each leg features
-                                a hybrid mitre/bridle joint, and the tabletop itself is joined using a mitre joint with
-                                ash keys. All joinery had to be cut by hand due to tool-use restrictions.
-                            </p>
-                        </td>
-                    </table>
-                    <img src="img//table/table-4.JPG" style="width: 100%;">
+                    <img src="img/table/table-3.JPG" style="width: 100%;">
+                    <p>
+                        Part of my A-level course, I made this coffee table in walnut and ash, with a tempered
+                        glass top. The joinery was by far the most complex task: the bottom of each leg features
+                        a hybrid mitre/bridle joint, and the tabletop itself is joined using a mitre joint with
+                        ash keys. All joinery had to be cut by hand due to tool-use restrictions.
+                    </p>
+                    <img src="img/table/table-diagram.png" style="width: 100%;">
+                    <img src="img/table/table-1.jpg" style="width: 100%;">
                 </div>
 
                 <div class="focus" id="box-f">
@@ -177,8 +170,9 @@
                         This website is my own creation. I built it using HTML and CSS, with some JavaScript for
                         interactive elements, and it is made available through GitHub Pages. Because I've coded it
                         from scratch, with no frameworks, there may be some compatibility issues with some browsers
-                        etc. - if you find any, please let me know! I have some (very limited) experience working with
-                        Flask and Django, although as there is no python backend neither are needed here.
+                        etc. - if you find any, please let me know! I have some experience with JavaScript and PHP,
+                        as well as (very limited) knowledge of Flask and Django, although as there is no backend on
+                        this site I haven't used any of these.
                     </p>
                 </div>
 
@@ -199,7 +193,8 @@
                         project was part of a computing module I took as part of my degree, and used an neDB database
                         to store information. Meshing a computer's idealised vision of time with a calendar (e.g.
                         accounting for leap years) proved to be the most challenging part.
-                        More detail coming soon.
+                        <br><br>
+                        <a class="button" href="computing-2.html">See more</a>
                     </p>
                 </div>
                 
@@ -209,20 +204,14 @@
                         were hard to find at the time, so I decided to create an extremely simple scraping algorithm
                     in Python to log current COVID cases, hospitalisations and deaths.</p>
                     <img src="img/covid/covid-case.png" style="width: 100%;">
-                    <table style="border-collapse: collapse;">
-                        <td style="vertical-align: top;">
-                            <p>
-                                The program has been running since, saving data to an Excel
-                                spreadsheet. Far more accurate data are now available, but I have maintained the
-                                program and kept it running for interest. The above graph shows cases, hospitalisatons
-                                and deaths over time, and the CFR (case fatality rate, reported deaths per reported
-                                case) is to the right.
-                            </p>
-                        </td>
-                        <td style="width: 50%;">
-                            <img src="img/covid/covid-cfr.png" style="width: 100%;">
-                        </td>
-                    </table>
+                    <p>
+                        The program has been running since, saving data to an Excel
+                        spreadsheet. Far more accurate data are now available, but I have maintained the
+                        program and kept it running for interest. The above graph shows cases, hospitalisatons
+                        and deaths over time, and the CFR (case fatality rate, reported deaths per reported
+                        case) is below. The large gap between days ~640 and ~860 are where I lost data to a faulty SSD.
+                    </p>
+                    <img src="img/covid/covid-cfr.png" style="width: 100%;">
                     <p>Graphs last updated 03/02/2022.</p>
                 </div>
 
@@ -294,6 +283,7 @@
         </main>
 
         <footer>
+            <img src="img/logo-white.png" style="height: 2vw; padding: 2vw; float: left;">
             © J. Howells 2022
         </footer>
 
@@ -367,25 +357,25 @@
                 document.getElementById("coffee-f").style.display = 'block';
             };
 
-            document.getElementById("box").onclick = function() {
-                closeAll();
-                document.getElementById("box-f").style.display = 'block';
-            };
+            // document.getElementById("box").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("box-f").style.display = 'block';
+            // };
 
-            document.getElementById("bench").onclick = function() {
-                closeAll();
-                document.getElementById("bench-f").style.display = 'block';
-            };
+            // document.getElementById("bench").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("bench-f").style.display = 'block';
+            // };
 
             document.getElementById("website").onclick = function() {
                 closeAll();
                 document.getElementById("website-f").style.display = 'block';
             };
 
-            document.getElementById("weather").onclick = function() {
-                closeAll();
-                document.getElementById("weather-f").style.display = 'block';
-            };
+            // document.getElementById("weather").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("weather-f").style.display = 'block';
+            // };
 
             document.getElementById("calendar").onclick = function() {
                 closeAll();
@@ -397,35 +387,35 @@
                 document.getElementById("covid-f").style.display = 'block';
             };
 
-            document.getElementById("ecohome").onclick = function() {
-                closeAll();
-                document.getElementById("ecohome-f").style.display = 'block';
-            };
+            // document.getElementById("ecohome").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("ecohome-f").style.display = 'block';
+            // };
 
-            document.getElementById("careware").onclick = function() {
-                closeAll();
-                document.getElementById("careware-f").style.display = 'block';
-            };
+            // document.getElementById("careware").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("careware-f").style.display = 'block';
+            // };
 
-            document.getElementById("ciab").onclick = function() {
-                closeAll();
-                document.getElementById("ciab-f").style.display = 'block';
-            };
+            // document.getElementById("ciab").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("ciab-f").style.display = 'block';
+            // };
 
-            document.getElementById("reveng").onclick = function() {
-                closeAll();
-                document.getElementById("reveng-f").style.display = 'block';
-            };
+            // document.getElementById("reveng").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("reveng-f").style.display = 'block';
+            // };
 
-            document.getElementById("carbon").onclick = function() {
-                closeAll();
-                document.getElementById("carbon-f").style.display = 'block';
-            };
+            // document.getElementById("carbon").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("carbon-f").style.display = 'block';
+            // };
 
-            document.getElementById("vehicle").onclick = function() {
-                closeAll();
-                document.getElementById("vehicle-f").style.display = 'block';
-            };
+            // document.getElementById("vehicle").onclick = function() {
+            //     closeAll();
+            //     document.getElementById("vehicle-f").style.display = 'block';
+            // };
         </script>
 
     </body>
