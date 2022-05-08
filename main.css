@@ -241,7 +241,7 @@ footer {
 }
 
 /* TEMPORARY Webapp */
-.tile-2 {
+tile {
 	border-radius: 0.4vw;
 	background-color: var(--the-dark);
 	width: 46%;
@@ -258,13 +258,13 @@ footer {
 	margin: 2%;
 }
 
-.tile-img-2 {
+.tile-img {
 	position: relative;
 	border-radius: 0.4vw;
 	width: 100%;
 }
 
-.tile-txt-2 {
+tile-txt {
 	visibility: hidden;
 
 	position: absolute;
@@ -292,11 +292,19 @@ footer {
 	color: var(--off-white);
 	text-align: center;
 }
-/* 
-.tile-img-2:hover {
+
+tile:hover .tile-img {
 	opacity: 0.5;
 }
 
-.tile-img-4:hover {
+tile:hover tile-txt {
+	visibility: visible;
+}
+
+.tile-4:hover .tile-img-4 {
 	opacity: 0.5;
-} */
+}
+
+.tile-4:hover .tile-txt-4 {
+	visibility: visible;
+}
