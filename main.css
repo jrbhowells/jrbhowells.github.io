@@ -244,21 +244,16 @@ footer {
 tile {
 	border-radius: 0.4vw;
 	background-color: var(--the-dark);
-	width: 46%;
-	height: calc(43.75vw * 155/256);
+	width: 43.5vw; /* Half of main area, including all padding */
+	height: calc(43.5vw * 155/256);
 	display: inline-block;
-	margin: 2%;
+	margin: 2vw;
+
+	cursor: pointer;
+	transition: 0.2s ease;
 }
 
-.tile-4 {
-	background-color: var(--the-dark);
-	width: 21%;
-	height: calc(20vw * 1141/1262);
-	display: inline-block;
-	margin: 2%;
-}
-
-.tile-img {
+tile img {
 	position: relative;
 	border-radius: 0.4vw;
 	width: 100%;
@@ -269,12 +264,49 @@ tile-txt {
 
 	position: absolute;
 	width: inherit;
-	height: calc(43.75vw * 155/256);
-	line-height: calc(43.75vw * 155/256);
+	height: calc(43.5vw * 155/256);
 	z-index: 2;
 	color: var(--off-white);
 	text-align: center;
 }
+
+.single {
+	line-height: calc(43.5vw * 155/256);
+}
+
+.tile-head {
+	font-family: Didot, serif;
+	font-size: 2em;
+}
+
+.tile-sub {
+	padding-top: calc((43.5vw * 155/256)/2 - 2.5em);
+	padding-bottom: 0.5em;
+}
+
+tile:hover {
+	-webkit-transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	transform: scale(1.02);
+	transition: 0.2s ease;
+}
+
+tile:hover img {
+	opacity: 0.5;
+}
+
+tile:hover tile-txt {
+	visibility: visible;
+}
+
+.tile-4 {
+	background-color: var(--the-dark);
+	width: 19.75vw; /* Quarter of main area, including all padding */
+	height: calc(19.75vw * 1141/1262);
+	display: inline-block;
+	margin: 2vw;
+}
+
 
 .tile-img-4 {
 	position: relative;
@@ -291,14 +323,6 @@ tile-txt {
 	z-index: 2;
 	color: var(--off-white);
 	text-align: center;
-}
-
-tile:hover .tile-img {
-	opacity: 0.5;
-}
-
-tile:hover tile-txt {
-	visibility: visible;
 }
 
 .tile-4:hover .tile-img-4 {
