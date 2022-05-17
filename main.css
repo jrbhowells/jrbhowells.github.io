@@ -244,10 +244,10 @@ footer {
 tile {
 	border-radius: 0.4vw;
 	background-color: var(--the-dark);
-	width: 43.5vw; /* Half of main area, including all padding */
-	height: calc(43.5vw * 155/256);
+	width: 46%; /* Half of main area, including all padding */
+	height: calc(43vw * 155/256);
 	display: inline-block;
-	margin: 2vw;
+	margin: 2%;
 
 	cursor: pointer;
 	transition: 0.2s ease;
@@ -263,15 +263,15 @@ tile-txt {
 	visibility: hidden;
 
 	position: absolute;
-	width: inherit;
-	height: calc(43.5vw * 155/256);
+	width: 100%;
+	height: calc(43vw * 155/256);
 	z-index: 2;
 	color: var(--off-white);
 	text-align: center;
 }
 
 .single {
-	line-height: calc(43.5vw * 155/256);
+	line-height: calc(43vw * 155/256);
 }
 
 .tile-head {
@@ -280,7 +280,7 @@ tile-txt {
 }
 
 .tile-sub {
-	padding-top: calc((43.5vw * 155/256)/2 - 2.5em);
+	padding-top: calc((43vw * 155/256)/2 - 2.5em);
 	padding-bottom: 0.5em;
 }
 
@@ -301,10 +301,10 @@ tile:hover tile-txt {
 
 .tile-4 {
 	background-color: var(--the-dark);
-	width: 19.75vw; /* Quarter of main area, including all padding */
+	width: 21%; /* Quarter of main area, including all padding */
 	height: calc(19.75vw * 1141/1262);
 	display: inline-block;
-	margin: 2vw;
+	margin: 2%;
 }
 
 
