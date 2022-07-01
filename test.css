@@ -1,5 +1,5 @@
 :root {
-	--the-green: rgb(51, 181, 51);
+	--the-blue: rgb(77, 115, 152);
 	--off-white: rgb(245, 245, 245);
 	--the-dark: rgb(20, 20, 20);
 }
@@ -8,7 +8,7 @@
 
 body {
 	background-color: var(--off-white);
-	font-family: Trebuchet MS, serif;
+	font-family: Roboto, sans-serif;
 	text-align: justify;
     margin: 0;
 }
@@ -17,34 +17,33 @@ h1, h2, h3, h4 {
 	font-family: Didot, serif;
 }
 
+h2 {
+	color: var(--the-blue);
+}
+
 h1 {
-	/* position: absolute;
-    top: 34.5vw; */
-    position: relative;
-    margin: 0.7vw;
-	z-index: 2;
+	display: inline-block;
 	font-size: 3.75vw;
-	padding-left: 2.5vw;
-    margin-left: 0vw;
-    margin-top: -5.5vw;
+	margin: 0;
+	padding: 0;
 }
 
 h3 {
 	display: inline-block;
 	font-size: 1.5vw;
-    margin-top: 0.5vw;
+	margin: 0;
+	transform: translate(0, -30%);
 }
 
 /* 2. Header */
 
 header {
-	/* position: absolute; */
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: var(--the-dark);
-	color: var(--off-white);
-	/* height: 46.5vw; */
+	background-color: var(--off-white);
+	color: var(--the-blue);
+	border-bottom: 1px solid var(--the-blue)
 }
 
 .logo {
@@ -55,33 +54,42 @@ header {
 }
 
 .head-img {
-	width: 100vw;
-	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
-	-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0.4) 90%, rgba(0,0,0,0.4) 98%, rgba(0,0,0,0) 100%);
+	width: 100%;
+	animation-name: fade-head-grow;
+	animation-duration: 1s;
 }
 
+.head-img-narrow {
+	width: 100%;
+}
+
+@keyframes fade-head-grow {
+    0% {height: 13.471vw; opacity: 0;}
+    20% {height: 42.139vw; opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
 .navbar {
-	/* position: absolute;
-	top: 41.5vw; */
-    height: 4vw;
+    height: 5vw;
     padding-top: 0;
 	padding-left: 2.5vw;
 }
 
 a {
-	color: var(--off-white);
+	color: var(--the-blue);
     text-decoration: none;
 }
 
 a:hover {
-	color: var(--the-green);
+	color: var(--the-dark);
 	cursor: pointer;
 }
 
-.current {
+/* .current {
 	color: var(--the-green);
 	cursor: pointer;
-}
+} */
 
 /* 3. Main */
 
