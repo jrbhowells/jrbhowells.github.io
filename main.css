@@ -2,6 +2,7 @@
 	--the-green: rgb(51, 181, 51);
 	--off-white: rgb(245, 245, 245);
 	--the-dark: rgb(20, 20, 20);
+	--the-blue: rgb(77, 115, 152);
 }
 
 /* 1. Generals */
@@ -17,22 +18,22 @@ h1, h2, h3, h4 {
 	font-family: Didot, serif;
 }
 
+h2 {
+	color: var(--the-blue);
+}
+
 h1 {
-    position: relative;
-    margin: 0.7vw;
-	z-index: 2;
-	font-size: 50px;
-	padding-left: 2.5vw;
-    margin-left: 0vw;
-    margin-top: -73px;
-	animation-name: fade-head;
-    animation-duration: 1s;
+	display: inline-block;
+	font-size: 3.75vw;
+	margin: 0;
+	padding: 0;
 }
 
 h3 {
 	display: inline-block;
 	font-size: 20px;
     margin-top: 0.5vw;
+	transform: translate(0, -30%);
 }
 
 .button {
@@ -58,194 +59,17 @@ h3 {
 .button:hover {
 	border: 2px solid var(--off-white);
 	color: var(--off-white);
-	background-color: var(--the-green);
+	background-color: var(--the-blue);
 	cursor: pointer;
 }
 
-/* 2. Header */
+/* 1.1 Tiles */
 
-header {
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: var(--the-dark);
-	color: var(--off-white);
-}
-
-.logo {
-	width: 5%;
-	position: absolute;
-	top: 1vw;
-	left: 1vw;
-}
-
-.head-img {
-	width: 100%;
-	mask-image: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 11px, rgba(0,0,0,0.4) 54px, rgba(0,0,0,1) 81px);
-	-webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 11px, rgba(0,0,0,0.4) 54px, rgba(0,0,0,1) 81px);
-	animation-name: fade-head-grow;
-    animation-duration: 1s;
-}
-
-.head-img-narrow {
-	width: 100%;
-	mask-image: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 9px, rgba(0,0,0,0.4) 52px, rgba(0,0,0,1) 86px);
-	-webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0, rgba(0,0,0,0.4) 9px, rgba(0,0,0,0.4) 52px, rgba(0,0,0,1) 86px);
-	animation-name: fade-head-shrink;
-    animation-duration: 1s;
-}
-
-@keyframes fade-head-grow {
-    0% {height: 13.471vw; opacity: 0;}
-    20% {height: 42.139vw; opacity: 0;}
-	100% {opacity: 1;}
-}
-
-@keyframes fade-head-shrink {
-    0% {height: 42.139vw; opacity: 0;}
-    20% {height: 13.471vw; opacity: 0;}
-	100% {opacity: 1;}
-}
-
-.navbar {
-    height: 47px;
-    padding-top: 0;
-	padding-left: 2.5vw;
-	animation-name: fade-head;
-    animation-duration: 1s;
-}
-
-a {
-	color: var(--off-white);
-    text-decoration: none;
-}
-
-a:hover {
-	color: var(--the-green);
-	cursor: pointer;
-}
-
-.current {
-	color: var(--the-green);
-	cursor: pointer;
-}
-
-@keyframes fade-head {
-    0% {opacity: 0;}
-    20% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-/* 3. Main */
-
-main {
-	left: 0;
-	width: 95%;
-	padding: 2.5%;
-    padding-top: 0.5%;
-	display: block;
-	overflow: auto;
-}
- /* 3.1. Projects page */
-
- left {
-	position: relative;
-	float: left;
-	width: 48.75%;
-}
-
-.cbox {
-	height: 50px;
-	border: 1px solid var(--the-dark);
-	border-radius: 5px;
-	padding-left: 2.5%;
-	padding-right: 2.5%;
-	overflow: hidden;
-}
-
-.cbox h2, h4 {
-	line-height: 0px;
-}
-
-.plus, .minus {
-	text-align: right;
-	line-height: 0px;
-}
-
-.plus:hover, .minus:hover {
-	color: var(--the-green);
-	cursor: pointer;
-}
-
-.minus {
-	display: none;
-}
-
-hr {
-	border: none;
-	border-top: 0.5px solid var(--the-dark);
-}
-
-.cbox div {
-	border-left: 2px solid var(--the-dark);
-	padding-left: 2%;
-	height: 24px;
-}
-
-.cbox div:hover {
-	border-left: 4px solid var(--the-green);
-	color: var(--the-green);
-	padding-left: calc(2% - 2px);
-	cursor: pointer;
-}
-
-.cbox h3 {
-	display:inline;
-	line-height: 24px;
-}
-
-.ooa {
-	color: gray;
-}
-
-.cbox p {
-	vertical-align: top;
-	margin: 0;
-	
-}
-
-right {
-	position: relative;
-	float: right;
-	width: 48.75%;
-}
-
-.focus {
-	border: 1px solid var(--the-dark);
-	border-radius: 5px;
-	padding: 2.5%;
-	padding-top: 0%;
-	display: none;
-}
-
-/* 4. Footer */
-
-footer {
-	position: relative;
-	background-color: var(--the-dark);
-	color: var(--off-white);
-	font-family: Didot, serif;
-	height: 6vw;
-	line-height: 6vw;
-	padding-left: 5vw;
-}
-
-/* TEMPORARY Webapp */
 tile {
 	border-radius: 0.4vw;
 	background-color: var(--the-dark);
 	width: 46%; /* Half of main area, including all padding */
-	height: calc(43vw * 155/256);
+	padding-top: 339/559;
 	display: inline-block;
 	margin: 2%;
 
@@ -331,4 +155,177 @@ tile:hover tile-txt {
 
 .tile-4:hover .tile-txt-4 {
 	visibility: visible;
+}
+
+/* 2. Header */
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--off-white);
+	color: var(--the-blue);
+	border-bottom: 1px solid var(--the-blue)
+}
+
+.logo {
+	width: 5%;
+	position: absolute;
+	top: 1vw;
+	left: 1vw;
+}
+
+.head-img {
+	width: 100%;
+	animation-name: fade-head-grow;
+    animation-duration: 1s;
+}
+
+.head-img-narrow {
+	width: 100%;
+}
+
+@keyframes fade-head-grow {
+    0% {height: 13.471vw; opacity: 0;}
+    20% {height: 42.139vw; opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes fade-head-shrink {
+    0% {height: 42.139vw; opacity: 0;}
+    20% {height: 13.471vw; opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.navbar {
+	height: 5vw;
+    padding-top: 0;
+	padding-left: 2.5vw;
+}
+
+a {
+	color: var(--the-blue);
+    text-decoration: none;
+}
+
+a:hover {
+	color: var(--the-dark);
+	cursor: pointer;
+}
+
+.current {
+	color: var(--the-green);
+	cursor: pointer;
+}
+
+@keyframes fade-head {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* 3. Main */
+
+main {
+	left: 0;
+	width: 95%;
+	padding: 2.5%;
+    padding-top: 0.5%;
+	display: block;
+	overflow: auto;
+}
+ /* 3.1. Projects page */
+
+ left {
+	position: relative;
+	float: left;
+	width: 48.75%;
+	min-height: 60vh;
+}
+
+.cbox {
+	height: 50px;
+	border: 1px solid var(--the-dark);
+	border-radius: 5px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	overflow: hidden;
+}
+
+.cbox h2, h4 {
+	line-height: 0px;
+}
+
+.plus, .minus {
+	text-align: right;
+	line-height: 0px;
+}
+
+.plus:hover, .minus:hover {
+	color: var(--the-dark);
+	cursor: pointer;
+}
+
+.minus {
+	display: none;
+}
+
+hr {
+	border: none;
+	border-top: 0.5px solid var(--the-dark);
+}
+
+.cbox div {
+	border-left: 2px solid var(--the-dark);
+	padding-left: 2%;
+	height: 24px;
+}
+
+.cbox div:hover {
+	border-left: 4px solid var(--the-blue);
+	color: var(--the-blue);
+	padding-left: calc(2% - 2px);
+	cursor: pointer;
+}
+
+.cbox h3 {
+	display:inline;
+	line-height: 24px;
+}
+
+.ooa {
+	color: gray;
+}
+
+.cbox p {
+	vertical-align: top;
+	margin: 0;
+	
+}
+
+right {
+	position: relative;
+	float: right;
+	width: 48.75%;
+}
+
+.focus {
+	border: 1px solid var(--the-dark);
+	border-radius: 5px;
+	padding: 2.5%;
+	padding-top: 0%;
+	display: none;
+}
+
+/* 4. Footer */
+
+footer {
+	position: relative;
+	background-color: var(--off-white);
+	color: var(--the-blue);
+	font-family: Didot, serif;
+	height: 6vw;
+	line-height: 6vw;
+	padding-left: 5vw;
+	border-top: 1px solid var(--the-blue)
 }
