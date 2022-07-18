@@ -24,31 +24,35 @@
 
         <main>
             <h2>Projects</h2>
-            <p>A selection of academic and other unrelated projects. Academic projects marked with an asterisk.
-                This site is a work-in-progress so all parts need tidying up.
+            <p>
+                I have done many practical, design and technical projects, some of which I have explained below. I've explained my favourite of these in more detail on the Portfolio page. Projects marked with an asterisk were done as part of my MEng, while most of the remainder are things I have done in my spare time.
             </p><br>
             <left>
-                <div class="cbox" id="wood" style="height: auto;">
+                <div class="cbox" id="wood">
                     <table style="width: 100%;">
-                        <td><h4>Woodwork</h4></td>
+                        <td><h4>Practical Projects</h4></td>
                         <td>
-                            <h2 class="plus" id="wood-">‒</h2>
-                            <h2 class="minus" id="wood+">+</h2>
+                            <h2 class="minus" id="wood-">‒</h2>
+                            <h2 class="plus" id="wood+">+</h2>
                         </td>
                     </table>
                     <hr>
-                    <p>I've done several woodworking-related projects over the last few years.</p>
+                    <p>I've done several practical, workshop-based projects over the last few years.</p>
                     <br>
-                    <div id="coffee">
+                    <div id="lathe">
+                        <h3 class="ooa">Home-Made Wood Lathe</h3>
+                    </div>
+                    <br>
+                    <div class="project" id="coffee">
                         <h3>Coffee Table</h3>
                     </div>
                     <br>
-                    <div id="box">
-                        <h3 class="ooa">Secret Compartment Box</h3>
+                    <div class="project" id="box">
+                        <h3>Secret Compartment Box</h3>
                     </div>
                     <br>
-                    <div id="bench">
-                        <h3 class="ooa">Recycled Teak Garden Bench *</h3>
+                    <div class="project" id="bench">
+                        <h3>Recycled Teak Garden Bench</h3>
                     </div>
                     <br>
                 </div>
@@ -64,7 +68,7 @@
                     <hr>
                     <p>A few coding projects I've worked on.</p>
                     <br>
-                    <div id="website">
+                    <div class="project" id="website">
                         <h3>This Website</h3>
                     </div>
                     <br>
@@ -72,11 +76,11 @@
                         <h3 class="ooa">Machine Learning Weather Forecast</h3>
                     </div>
                     <br>
-                    <div id="calendar">
-                        <h3>Calendar / Reminders Webapp *</h3>
+                    <div class="project" id="calendar">
+                        <h3>*Calendar / Reminders Webapp</h3>
                     </div>
                     <br>
-                    <div id="covid">
+                    <div class="project" id="covid">
                         <h3>Coronavirus Data Scraper</h3>
                     </div>
                     <br>
@@ -93,16 +97,24 @@
                     <hr>
                     <p>Some other random concept projects.</p>
                     <br>
-                    <div id="ecohome">
-                        <h3 class="ooa">Fully sustainable Eco-Home</h3>
-                    </div>
-                    <br>
-                    <div id="careware">
-                        <h3 class="ooa">CareWare: Space Saving in Small Kitchens *</h3>
+                    <div id="venio">
+                        <h3 class="ooa">*Garmin Venio: Haptic Guidance for Cycling</h3>
                     </div>
                     <br>
                     <div id="ciab">
-                        <h3 class="ooa">Christmas in a Box Service *</h3>
+                        <h3 class="ooa">*Oculate: Safety on a Bike</h3>
+                    </div>
+                    <br>
+                    <div class="project" id="ciab">
+                        <h3>*Christmas in a Box Service</h3>
+                    </div>
+                    <br>
+                    <div class="project" id="careware">
+                        <h3>*CareWare: Space Saving in Small Kitchens</h3>
+                    </div>
+                    <br>
+                    <div class="project" id="ecohome">
+                        <h3>Fully sustainable Eco-Home</h3>
                     </div>
                     <br>
                 </div>
@@ -118,16 +130,20 @@
                     <hr>
                     <p>Coursework investigations and reports.</p>
                     <br>
-                    <div id="reveng">
-                        <h3 class="ooa">RevEng: Reverse Engineering *</h3>
+                    <div class="project" id="vehicle">
+                        <h3>*Vehicle Aerodynamics Simulation</h3>
                     </div>
                     <br>
-                    <div id="carbon">
-                        <h3 class="ooa">Carbon-neutral Housing Study *</h3>
+                    <div class="project" id="carbon">
+                        <h3>*Carbon-neutral Housing Study</h3>
                     </div>
                     <br>
-                    <div id="vehicle">
-                        <h3 class="ooa">Vehicle Aerodynamics Simulation *</h3>
+                    <div class="project" id="reveng">
+                        <h3>*RevEng: Reverse Engineering of a Household Product</h3>
+                    </div>
+                    <br>
+                    <div class="project" id="reveng">
+                        <h3>*Materialise: Analysis of Material Suitability</h3>
                     </div>
                     <br>
                 </div>
@@ -173,7 +189,7 @@
                         from scratch, with no frameworks, there may be some compatibility issues with some browsers
                         etc. - if you find any, please let me know! I have some experience with JavaScript and PHP,
                         as well as (very limited) knowledge of Flask and Django, although as there is no backend on
-                        this site I haven't used any of these.
+                        this site I haven't used either of these.
                     </p>
                 </div>
 
@@ -214,7 +230,7 @@
                         spreadsheet. Far more accurate data are now available, but I have maintained the
                         program and kept it running for interest. The above graph shows cases, hospitalisatons
                         and deaths over time, and the CFR (case fatality rate, reported deaths per reported
-                        case) is below. The large gap between days ~640 and ~860 are where I lost data to a faulty SSD.
+                        case) is below. The large gap between days ~640 and ~760 are where I lost data to a faulty SSD.
                     </p>
                     <img src="img/covid/covid-cfr.png" style="width: 100%;">
                     <p>Graphs last updated 03/02/2022.</p>
@@ -293,134 +309,35 @@
         </footer>
 
         <script>
-            document.getElementById("wood-").onclick = function() {
-                document.getElementById('wood').style.height = '50px';
-                document.getElementById("wood-").style.display = 'none';
-                document.getElementById('wood+').style.display = 'block';
-            };
+            const focuses = Array.from(document.getElementsByClassName('focus'))
+            const minuses = Array.from(document.getElementsByClassName('minus'))
+            const pluses = Array.from(document.getElementsByClassName('plus'))
+            const projects = Array.from(document.getElementsByClassName('project'))
 
-            document.getElementById("wood+").onclick = function() {
-                document.getElementById('wood').style.height = 'auto';
-                this.style.display = 'none';
-                document.getElementById('wood-').style.display = 'block';
-            };
+            minuses.forEach((element) => {
+                element.onclick = function() {
+                    theID = element.id.slice(0, -1)
+                    document.getElementById(theID).style.height = '50px';
+                    element.style.display = 'none';
+                    document.getElementById(theID + '+').style.display = 'block';
+                }
+            })
 
-            document.getElementById("code-").onclick = function() {
-                document.getElementById('code').style.height = '50px';
-                document.getElementById("code-").style.display = 'none';
-                document.getElementById('code+').style.display = 'block';
-            };
+            pluses.forEach((element) => {
+                element.onclick = function() {
+                    theID = element.id.slice(0, -1)
+                    document.getElementById(theID).style.height = 'auto';
+                    element.style.display = 'none';
+                    document.getElementById(theID + '-').style.display = 'block';
+                }
+            })
 
-            document.getElementById("code+").onclick = function() {
-                document.getElementById('code').style.height = 'auto';
-                this.style.display = 'none';
-                document.getElementById('code-').style.display = 'block';
-            };
-
-            document.getElementById("conc-").onclick = function() {
-                document.getElementById('conc').style.height = '50px';
-                document.getElementById("conc-").style.display = 'none';
-                document.getElementById('conc+').style.display = 'block';
-            };
-
-            document.getElementById("conc+").onclick = function() {
-                document.getElementById('conc').style.height = 'auto';
-                this.style.display = 'none';
-                document.getElementById('conc-').style.display = 'block';
-            };
-
-            document.getElementById("reps-").onclick = function() {
-                document.getElementById('reps').style.height = '50px';
-                document.getElementById("reps-").style.display = 'none';
-                document.getElementById('reps+').style.display = 'block';
-            };
-
-            document.getElementById("reps+").onclick = function() {
-                document.getElementById('reps').style.height = 'auto';
-                this.style.display = 'none';
-                document.getElementById('reps-').style.display = 'block';
-            };
-
-            function closeAll () {
-                document.getElementById("coffee-f").style.display = 'none';
-                document.getElementById("box-f").style.display = 'none';
-                document.getElementById("bench-f").style.display = 'none';
-                document.getElementById("website-f").style.display = 'none';
-                document.getElementById("weather-f").style.display = 'none';
-                document.getElementById("calendar-f").style.display = 'none';
-                document.getElementById("covid-f").style.display = 'none';
-                document.getElementById("ecohome-f").style.display = 'none';
-                document.getElementById("careware-f").style.display = 'none';
-                document.getElementById("ciab-f").style.display = 'none';
-                document.getElementById("reveng-f").style.display = 'none';
-                document.getElementById("carbon-f").style.display = 'none';
-                document.getElementById("vehicle-f").style.display = 'none';
-            };
-
-            document.getElementById("coffee").onclick = function() {
-                closeAll();
-                document.getElementById("coffee-f").style.display = 'block';
-            };
-
-            // document.getElementById("box").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("box-f").style.display = 'block';
-            // };
-
-            // document.getElementById("bench").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("bench-f").style.display = 'block';
-            // };
-
-            document.getElementById("website").onclick = function() {
-                closeAll();
-                document.getElementById("website-f").style.display = 'block';
-            };
-
-            // document.getElementById("weather").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("weather-f").style.display = 'block';
-            // };
-
-            document.getElementById("calendar").onclick = function() {
-                closeAll();
-                document.getElementById("calendar-f").style.display = 'block';
-            };
-
-            document.getElementById("covid").onclick = function() {
-                closeAll();
-                document.getElementById("covid-f").style.display = 'block';
-            };
-
-            // document.getElementById("ecohome").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("ecohome-f").style.display = 'block';
-            // };
-
-            // document.getElementById("careware").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("careware-f").style.display = 'block';
-            // };
-
-            // document.getElementById("ciab").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("ciab-f").style.display = 'block';
-            // };
-
-            // document.getElementById("reveng").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("reveng-f").style.display = 'block';
-            // };
-
-            // document.getElementById("carbon").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("carbon-f").style.display = 'block';
-            // };
-
-            // document.getElementById("vehicle").onclick = function() {
-            //     closeAll();
-            //     document.getElementById("vehicle-f").style.display = 'block';
-            // };
+            projects.forEach((element) => {
+                element.onclick = function() {
+                    focuses.forEach((element) => {element.style.display = 'none';})
+                    document.getElementById(element.id + '-f').style.display = 'block';
+                }
+            })
         </script>
 
     </body>

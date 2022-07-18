@@ -26,25 +26,25 @@
             <h2>Portfolio</h2>
             <p>Selected academic work and projects. Many of these feature, in less detail, on the Projects page.</p>
             <p>This page is unfinished so the links aren't clickable.</p>
-            <tile>
+            <tile id="garmin-venio">
                 <tile-txt>
-                    <div class="tile-sub">Industrial Desing Engineering II</div>
+                    <div class="tile-sub">Industrial Design Engineering II</div>
                     <div class="tile-head">Garmin* Venio: Navigation for Cyclists</div>
                 </tile-txt>
                 <img src="img/portfolio/ide2/venio-exploded.jpg">
-            </tile><tile>
+            </tile><tile id="oculate">
                 <tile-txt>
-                    <div class="tile-sub">Industrial Desing Engineering I</div>
+                    <div class="tile-sub">Industrial Design Engineering I</div>
                     <div class="tile-head">Oculate: Urban Cycling Aid</div>
                 </tile-txt>
                 <img src="img/portfolio/ide1/ide1-tile.png">
-            </tile><tile>
+            </tile><tile id="cfd">
                 <tile-txt>
                     <div class="tile-sub">Computational Fluid Dynamics</div>
                     <div class="tile-head">Vehicle Design Aerodynamics</div>
                 </tile-txt>
                 <img src="img/portfolio/cfd/cfd-tile.png">
-            </tile><tile>
+            </tile><tile id="fea">
                 <tile-txt>
                     <div class="tile-sub">Finite Element Analysis</div>
                     <div class="tile-head">Tandem Bicycle Frame</div>
@@ -65,9 +65,117 @@
             </tile>
         </main>
 
+        <popups>
+            <popup id="garmin-venio-popup">
+                <popup-box>
+                    <div>
+                        <img src="img/portfolio/ide2/venio-rider.png" style="width: calc(100% + 60px); margin:-30px; margin-bottom: 0;">
+                        <div class="back">< Back</div>
+                        <h2>Garmin* Venio: Navigation for Urban Cyclists</h2>
+                        <p>*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
+                    </div>
+                    <h2>Skills Developed</h2>
+                    <div class="pill">CAD</div><div class="pill">Technical Drawing</div><div class="pill">Rendering: KeyShot</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div><div class="pill">DFMA</div><div class="pill">Coding</div><div class="pill">Industrial Design</div>
+                    <h2>About the Project</h2>
+                    <p>Garmin Venio is a tool to help new and inexperienced cyclists navigate the roads of a city, and features built-in GPS and haptic feedback to guide users. As a group, we developed all aspects of the product, including branding, packaging, compliance and labelling, as well as producing a fully working prototype and a set of technical drawings for production.</p>
+                    <p>Venio is designed not to take attention away from the road: vibration motors in the silicone neck band guide the wearer with vibration patterns. Users set a destination on an app, and the route is then uploaded to Venio and processed locally.</p>
+                    <h3>Electronics</h3>
+                    <p>Venio uses an ESP32, a GPS module and two vibration motors, powered by a 500 mAh battery. While these exact components wouldn’t be used in a commercial product, components were selected based chiefly on price and availability: Venio is targeted at less-professional sportspeople (unlike other Garmin products) so a low price point was essential.</p>
+                    <p>The device is programmed in MicroPython - the above provides a brief explanation of what it does.</p>
+                    <h3>DFMA</h3>
+                    <p>
+                        Fitting the electronics into a small casing proved extremely difficult and took over a hundred iterations in CAD before I was happy with the result.
+                        Final design and technical drawings fully specified all parts of the casing and product, and costing and injection moulding simulations were used to further refine the design.
+                    </p>
+                    <h3>Prototype Manufacture</h3>
+                    <p>
+                        Several versions of the casing were 3D printed to test electronics for fit. Once I was happy, I soldered all the electronic components and installed them.
+                        The custom magnetic clasp was also printed, and the silicone bands were made using cloth - we did not have access to silicone.
+                    </p>
+                    <a class="button" href="">Watch the Video</a><a class="button" href="doc/Venio_IDE2_Final.pdf">Full Documentation</a>
+                </popup-box>
+            </popup>
+
+            <popup id="oculate-popup">
+                <popup-box>
+                    <div>
+                        <img src="" style="width: calc(100% + 60px); margin:-30px; margin-bottom: 0;">
+                        <div class="back">< Back</div>
+                        <h2>Oculate: Navigation for Urban Cyclists</h2>
+                    </div>
+                    <h2>Skills Developed</h2>
+                    <div class="pill">Skill2</div>
+                    <h2>About the Project</h2>
+                    <p>Oculate is a set of two products to help cyclists find their way around urban streets. It was designed for the first part of an industrial design engineering module - continued development of this concept led to Garmin Venio</p>
+                    <h3>The Product</h3>
+                    <p>For new cyclists, navigating city streets can be hard. Oculate provides a wearable that protects a user's eyes and provides route guidance and hazard warnings. The separate handlebar console can provide route information should the glasses run out of power, and allows the user to control magnetically-attached indicators at the ends of the handlebars.</p>
+                    <h3>Glasses</h3>
+                    <p>The glasses use clear LCD displays to show route information to the user, and also feature built-in vibration motors above the ears to warn of approaching hazards. Electronics are housed in small casings below the arms of the glasses: these were prototyped for size and location, and this was found to be least obtrusive.</p>
+                    <h3>Indicators</h3>
+                    <p>Two consoles, one for each side, are attached to the handlebars. These are used to control the handlebar-tip indicators, and one of the two has a small screen displaying simple navigation instructions. The indicators themselves attach magnetically, and have the option of charging through a dynamo attached to the bike. Proximity sensors, to detect incoming traffic, are mounted to the indicators.</p>
+                    <a class="button" href="doc/Oculate_IDE1_Final.pdf">Full Documentation</a>
+                    <!-- imgs: nice render hero, exploded views with labels from indd, console detail -->
+                </popup-box>
+            </popup>
+
+            <popup id="cfd-popup">
+                <popup-box>
+                    <div>
+                        <img src="" style="width: calc(100% + 60px); margin:-30px; margin-bottom: 0;">
+                        <div class="back">< Back</div>
+                        <h2>Optimising Vehicle Design for Aerodynamics</h2>
+                    </div>
+                    <h2>Skills Developed</h2>
+                    <div class="pill">skill1</div>
+                    <h2>About the Project</h2>
+                    <p>In this project, I used surface modelling techniques in SolidWorks to build a Lamborghini - inspired car of my own design. I then analysed its aerodynamic performance using SolidWorks simulation, before proposing modifications to the design to reduce drag coefficient.</p>
+                    <h3>The Design</h3>
+                    <!-- SKETCH IMG -->
+                    <p>I modelled the basic shape of my car on the Lamborghini Huracan, designing my own panels and exterior features. I drew detailed sketches of the car from the front, bact, top and side before importing these into SolidWorks to trace from. Because I had made the sketches by hand, there were some inconsistencies I had to account for in the design.</p>
+                    <h3>Analysis</h3>
+                    <p></p>
+                    <a class="button" href="doc/CFD-Car.pdf">Full Report</a>
+                </popup-box>
+            </popup>
+
+            <popup id="fea-popup">
+                <popup-box>
+                    <div>
+                        <img src="" style="width: calc(100% + 60px); margin:-30px; margin-bottom: 0;">
+                        <div class="back">< Back</div>
+                        <h2>Design of a Tandem Bicycle Frame using Finite Element Methods</h2>
+                    </div>
+                    <h2>Skills Developed</h2>
+                    <div class="pill">SolidWorks Simulation</div><div class="pill">Technical Analysis</div><div class="pill">Report Writing</div><div class="pill">CAD & Rendering</div>
+                    <h2>About the Project</h2>
+                </popup-box>
+            </popup>
+        </popups>
+
         <footer>
             <img src="img/logo-blue.png" style="height: 2vw; padding: 2vw; float: left;">
             © J. Howells 2022
         </footer>
+
+        <script>
+            const tiles = Array.from(document.getElementsByTagName('tile'))
+            const backs = Array.from(document.getElementsByClassName('back'))
+            const popups = Array.from(document.getElementsByTagName('popup'))
+
+
+            tiles.forEach((element) => {
+                element.onclick = function() {
+                    document.getElementById(element.id + '-popup').style.display = 'block';
+                };
+            })
+
+            backs.forEach((element) => {
+                element.onclick = function() {
+                    popups.forEach((element) => {
+                        element.style.display = 'none';
+                    })
+                };
+            })
+        </script>
     </body>
 </html>
