@@ -5,12 +5,11 @@
         <title>J. Howells</title>
         <link rel="shortcut icon" href="img/logo.png">
         <link rel="stylesheet" href="main.css">
-        <script type="module" src="main.js"></script>
     </head>
 
     <body>
         <header>
-            <img class="head-img" src="img/headers-tall/tall-header-car.png">
+            <img class="head-img" src="img/headers/tall-header-car.png">
             <!--<img class="logo" src="img/logo.png">-->
             <div class="navbar">
                 <a href="index.html"><h1>J. Howells</h1></a>
@@ -25,14 +24,28 @@
             </div>
         </header>
 
-        <main>
-            <h2>About</h2>
-            <p>I am currently studying Design Engineering at Imperial College London.</p>
+        <main style="text-align: center;">
+            <h1>About</h1>
+            <p>I am currently in my third year studying Design Engineering at Imperial College London.</p>
+            <p >I am also a Student Expert at my department's student-run workshop and makerspace, which means I help to maintain a 3D printer farm, laser cutter and other pieces of equipment, and teach others how to use them.
+            I'm on the committee of Imperial's Outdoor society, and have also been involved in the technical & backstage side of the Drama Society.</p>
+            <p>You can see much of my portfolio on this website, but for a PDF copy or for my CV, please contact me on james.howells20@imperial.ac.uk</p>
         </main>
 
         <footer>
             <img src="img/logo-blue.png" style="height: 2vw; padding: 2vw; float: left;">
             © J. Howells 2022
         </footer>
+
+        <script>
+            Array.prototype.random = function () {
+                return this[Math.floor((Math.random()*this.length))];
+            }
+
+            const header = document.getElementsByClassName('head-img')[0];
+            const images =  ['lake-district.jpg', 'tall-header-car.png', 'venio-header.jpg', 'reveng-header.jpg'];
+
+            header.src = 'img/headers/' + images.random();
+        </script>
     </body>
 </html>
