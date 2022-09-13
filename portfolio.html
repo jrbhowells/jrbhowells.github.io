@@ -24,13 +24,25 @@
 
         <main style="text-align: center;">
             <h1>Portfolio</h1>
-            <p>This page showcases some of my best projects in detail. These projects, along with others I have done, can be found on the Projects page.</p>
+            <p>This page showcases some of my most relevant projects in detail. These projects, along with others I have done, can be found on the Projects page.</p>
             <a href="#garmin-venio-popup"><tile id="garmin-venio">
                 <tile-txt>
                     <div class="tile-sub">Industrial Design Engineering II</div>
                     <div class="tile-head">Garmin* Venio: Navigation for Cyclists</div>
                 </tile-txt>
                 <img src="img/portfolio/ide2/venio-exploded.jpg">
+            </tile></a><a href="#gizmo-popup"><tile id="gizmo">
+                <tile-txt>
+                    <div class="tile-sub">Gizmo: Physical Computing</div>
+                    <div class="tile-head">The Useless Box</div>
+                </tile-txt>
+                <img src="img/portfolio/gizmo/gizmo-tile.png">
+            </tile></a><a href="#segway-popup"><tile id="segway">
+                <tile-txt>
+                    <div class="tile-sub">Electronics: Signals, Systems and Control</div>
+                    <div class="tile-head">Self-Balancing Mini Segway</div>
+                </tile-txt>
+                <img src="img/portfolio/segway/segway-tile.png">
             </tile></a><a href="#fea-popup"><tile id="fea">
                 <tile-txt>
                     <div class="tile-sub">Finite Element Analysis</div>
@@ -49,12 +61,6 @@
                     <div class="tile-head">Home-Made Wood Lathe</div>
                 </tile-txt>
                 <img src="img/portfolio/lathe/lathe-tile.jpg">
-            </tile></a><a href="#segway-popup"><tile id="segway">
-                <tile-txt>
-                    <div class="tile-sub">Electronics: Signals, Systems and Control</div>
-                    <div class="tile-head">Self-Balancing Mini Segway</div>
-                </tile-txt>
-                <img src="img/portfolio/segway/segway-tile.png">
             </tile></a><a href="#oculate-popup"><tile id="oculate">
                 <tile-txt>
                     <div class="tile-sub">Industrial Design Engineering I</div>
@@ -202,6 +208,30 @@
                     <p>The Segway used Dr. Peter Cheung's <a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE2_EE/Pybench%20User's%20Guide.pdf">PyBench board</a>, which includes an IMU and motor drivers among other things, with two wheels and a 9V battery.</p>
                     <p>I used a PID controller, with the current angle of the segway as its input, to achieve self-balancing. The 'P' - proportional - term simply allows the segway to react when it's angle relative to vertical is not 0, while the I - integral - term removes any steady-state error that would cause the segway to drift sideways. The D - differential - term allows the segway to react to a rate of change of angle rather than simply to the angle being displaced. These together make for a fast and steady response to any change of angle and keep the segway upright for extended periods of time.</p>
                     <br>
+                </popup-box>
+            </popup>
+
+            <popup id="gizmo-popup"> <!-- Done -->
+                <popup-box>
+                    <div>
+                        <img src="img/portfolio/gizmo/gizmo-main.png" style="margin-top: -30px; margin-bottom: 0;">
+                        <div class="back">< Back</div>
+                        <h2>Physical Computing: The Useless Box</h2>
+                    </div>
+                    <h2>Skills Developed</h2>
+                    <div class="pill">CAD</div><div class="pill">Prototyping</div><div class="pill">Arduino</div><div class="pill">Electronics</div>
+                    <h2>About the Project</h2>
+                    <p>A its name suggests, the Useless Box is a box that does very little that is of use to anyone. The box can get progressively more ‘annoyed’ as the user turns the switch on - at first, it simply turns the switch back off but as it gets more exasperated about this not working, it starts to take more action - hiding the switch from the user, or even running away.</p>
+                    <p>The way the box reacts (how vigorously it turns the switch off) depends on how fast the user switches it on: the longer the user takes to turn the switch on, the ‘sneakier’ the box is about turning it off.</p>
+                    <img src="img/portfolio/gizmo/gizmo-mechs.png">
+                    <h3>Electronics</h3>
+                    <p>The whole box is controlled by an Arduino Uno, which takes inputs from the switch and ultrasonic distance sensor. These are then used to control one of four SG90 servos (switch off the switch, hide the switch, pop the eyes up, run away). All the servos are connected to a common power and ground rail, and their signal wires are routed to the arduino.</p>
+                    <h3>Modified Servo</h3>
+                    <img src="img/portfolio/gizmo/gizmo-servo.png" style="width: 75%;">
+                    <p>In order to use a regular SG90 servo to power the wheels, I modified it for continuous rotation by removing the potentiometer and replacing it with two 5 kΩ resistors. This means that the servo doesn’t know what angle it is at, and so continues rotating while any angle other than 90° is selected in the code.</p>
+                    <iframe style="width: 50vw; height: calc(50vw * 315/560)" src="https://www.youtube.com/embed/7Mt-p6ccgrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br><br>
+                    <a class="button" href="doc/Gizmo_Poster.pdf">See Poster</a>
                 </popup-box>
             </popup>
         </popups>
