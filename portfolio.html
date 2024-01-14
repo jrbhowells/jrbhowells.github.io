@@ -7,201 +7,25 @@
             <h1>Portfolio</h1>
             <p>This page showcases some of my most relevant projects in detail. These projects, along with others I have done, can be found on the Projects page.</p>
             
-            {% for folio in site.portfolio %}
-
-            <a href="#{{folio.popup-id}}"><tile id="{{folio.tile-id}}">
+            {% for folio in site.portfolio %}<a href="#{{folio.popup-id}}"><tile id="{{folio.tile-id}}">
                 <tile-txt>
                     <div class="tile-sub">{{folio.tile-sub}}</div>
                     <div class="tile-head">{{folio.tile-sub}}</div>
                 </tile-txt>
                 <img src="{{folio.hero}}">
-            </tile></a>
-
-            {% endfor %}
-            
-            
-            </a><a href="#gizmo-popup"><tile id="gizmo">
-                <tile-txt>
-                    <div class="tile-sub">Gizmo: Physical Computing</div>
-                    <div class="tile-head">The Useless Box</div>
-                </tile-txt>
-                <img src="img/portfolio/gizmo/gizmo-tile.png">
-            </tile></a><a href="#segway-popup"><tile id="segway">
-                <tile-txt>
-                    <div class="tile-sub">Electronics: Signals, Systems and Control</div>
-                    <div class="tile-head">Self-Balancing Mini Segway</div>
-                </tile-txt>
-                <img src="img/portfolio/segway/segway-tile.png">
-            </tile></a><a href="#fea-popup"><tile id="fea">
-                <tile-txt>
-                    <div class="tile-sub">Finite Element Analysis</div>
-                    <div class="tile-head">Tandem Bicycle Frame</div>
-                </tile-txt>
-                <img src="img/portfolio/fea/fea-tile.png">
-            </tile></a><a href="#cfd-popup"><tile id="cfd">
-                <tile-txt>
-                    <div class="tile-sub">Computational Fluid Dynamics</div>
-                    <div class="tile-head">Vehicle Design Aerodynamics</div>
-                </tile-txt>
-                <img src="img/portfolio/cfd/cfd-tile.png">
-            </tile></a><a href="#lathe-popup"><tile id="lathe">
-                <tile-txt>
-                    <div class="tile-sub">Free-Time Project</div>
-                    <div class="tile-head">Home-Made Wood Lathe</div>
-                </tile-txt>
-                <img src="img/portfolio/lathe/lathe-tile.jpg">
-            </tile></a><a href="#oculate-popup"><tile id="oculate">
-                <tile-txt>
-                    <div class="tile-sub">Industrial Design Engineering I</div>
-                    <div class="tile-head">Oculate: Urban Cycling Aid</div>
-                </tile-txt>
-                <img src="img/portfolio/ide1/ide1-tile.png">
-            </tile></a>
+            </tile></a>{% endfor %}
         </main>
 
         <popups>
 
             {% for folio in site.portfolio %}
 
-            <popup id="{{folio.popup-id}}">
+            <popup id="{{folio.popup-id}}" style="display: none;">
                 {{ folio.content }}
             </popup>
 
             {% endfor %}
 
-            <popup id="oculate-popup"> <!--Done-->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/ide1/ide1-indicator-exp.png" style="margin-top: -30px; margin-bottom: 0;">
-                        <div class="back">< Back</div>
-                        <h2>Oculate: Navigation for Urban Cyclists</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">CAD</div><div class="pill">Rendering: Fusion 360</div><div class="pill">Industrial Design</div>
-                    <h2>About the Project</h2>
-                    <p>Oculate is a set of two products to help cyclists find their way around urban streets. It was designed for the first part of an industrial design engineering module - continued development of this concept led to Garmin Venio</p>
-                    <h3>The Product</h3>
-                    <p>For new cyclists, navigating city streets can be hard. Oculate provides a wearable that protects a user's eyes and provides route guidance and hazard warnings. The separate handlebar console can provide route information should the glasses run out of power, and allows the user to control magnetically-attached indicators at the ends of the handlebars.</p>
-                    <h3>Glasses</h3>
-                    <p>The glasses use clear LCD displays to show route information to the user, and also feature built-in vibration motors above the ears to warn of approaching hazards. Electronics are housed in small casings below the arms of the glasses: these were prototyped for size and location, and this was found to be least obtrusive.</p>
-                    <img src="img/portfolio/ide1/ide1-glasses.png">
-                    <h3>Indicators</h3>
-                    <p>Two consoles, one for each side, are attached to the handlebars. These are used to control the handlebar-tip indicators, and one of the two has a small screen displaying simple navigation instructions. The indicators themselves attach magnetically, and have the option of charging through a dynamo attached to the bike. Proximity sensors, to detect incoming traffic, are mounted to the indicators.</p>
-                    <img src="img/portfolio/ide1/ide1-indicator.png">
-                    <br><br>
-                    <a class="button" href="doc/IDE_Oculate.pdf">Full Documentation</a>
-                </popup-box>
-            </popup>
-
-            <popup id="cfd-popup"> <!--Done-->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/cfd/cfd-main.png" style="margin-top: -30px; margin-bottom: 0;">
-                        <div class="back">< Back</div>
-                        <h2>Optimising Vehicle Design for Aerodynamics</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">SolidWorks Simulation</div><div class="pill">Technical Analysis</div><div class="pill">Report Writing</div><div class="pill">CAD & Rendering</div>
-                    <h2>About the Project</h2>
-                    <p>In this project, I used surface modelling techniques in SolidWorks to build a Lamborghini-inspired car of my own design. I then analysed its aerodynamic performance using SolidWorks simulation, before proposing modifications to the design to reduce drag coefficient.</p>
-                    <h3>The Design</h3>
-                    <img src="img/portfolio/cfd/cfd-sketch.png" style="width: 50%;">
-                    <p>I modelled the basic shape of my car on the Lamborghini Huracan, designing my own panels and exterior features. I drew detailed sketches of the car from the front, bact, top and side before importing these into SolidWorks to trace from. Because I had made the sketches by hand, there were some inconsistencies I had to account for in the design.</p>
-                    <h3>Analysis</h3>
-                    <img src="img/portfolio/cfd/cfd-cut-velocity.png" style="width: 50%;">
-                    <p>I set the wind speed to 31.3 m/s (70 mph) and made sure gravity was turned on for the simulation. I analysed pressure and velocity of air along the car using cut plots, and used surface pressure distributions to identify problem areas. In addition, I used flow trajectories to locate turbulent flow around the vehicle. The coefficient of drag was a relatively high 0.45, probably due to the high frontal area of the design.</p>
-                    <h3>Next Steps</h3>
-                    <img src="img/portfolio/cfd/cfd-mod.png" style="width: 50%;">
-                    <p>Within the scope of the project, I did not have to make and test a second iteration - however, I did sketch some modifications to improve the aerodynamic performance of my car. These centred around reducing pressure concentrators and vortices created by the sharp rear of the design.</p>
-                    <a class="button" href="doc/CFD_Car.pdf">Full Report</a>
-                </popup-box>
-            </popup>
-
-            <popup id="fea-popup"> <!--Done-->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/fea/fea-header.png" style="margin-top: -30px; margin-bottom: 0;">
-                        <div class="back">< Back</div>
-                        <h2>Design of a Tandem Bicycle Frame using Finite Element Methods</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">SolidWorks Simulation</div><div class="pill">Technical Analysis</div><div class="pill">Report Writing</div><div class="pill">CAD & Rendering</div>
-                    <h2>About the Project</h2>
-                    <p>I designed a tandem bike frame and analysed it with finite element methods, before making a second iteration, aiming to decrease frame mass and improve fundamental frequency.
-                    <h3>Mesh Refinement</h3>
-                    <img src="img/portfolio/fea/fea-refined-mesh.png" style="width: 25%;">
-                    <p>I decreased mesh size incrementally until this made only negligible differences to the results of a static simulation. I then used local mesh refinement to reduce stress concentrators in key areas where the uniform mesh was under-performing (above, mesh is refined where tubes join).</p>
-                    <h3>Study Parameters</h3>
-                    <img src="img/portfolio/fea/fea-loading.png" style="width: 25%;">
-                    <p>I added a 150kg mass to both seat posts (for the cyclists, including a factor of safety). The front fork was fixed (no degrees of freedom) and rear axle was hinged (rotationally free, translationally fixed), and I used oscillating 750 N remote loads 100 mm out and 200 mm forward from the crank cases to simulate pedalling.</p>
-                    <h3>First Iteration Results</h3>
-                    <img src="img/portfolio/fea/fea-frequency.png" style="width: 50%;">
-                    <p>I found that the fundamental frequency of the first iteration, at over 50 Hz, was well above the 30 Hz required by the project brief, and that the frame did not suffer from fatigue. For the second iteration, I removed the rear down tube from the design and made the tubes thicker in diameter, with the same wall thickness.</p>
-                    <h3>Second Iteration</h3>
-                    <img src="img/portfolio/fea/fea-frequency-2.png" style="width: 50%;">
-                    <p>Mass of the second-iteration frame decreased by around 1%, and fundamental frequency was successfully increased by 12.3%. The fatigue life of this frame, when made out of aluminium and under the above loading conditions, was found to be 1.26 million cycles.</p>
-                    <a class="button" href="doc/FEA_Bike.pdf">Full Report</a>
-                </popup-box>
-            </popup>
-
-            <popup id="lathe-popup"> <!--Done-->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/lathe/lathe-main.JPG" style="margin-top: -30px; margin-bottom: 0;">
-                        <div class="back" style="color: var(--the-dark);">< Back</div>
-                        <h2 style="background-color: rgba(255,255,255,0.7); box-shadow: 0 0 50px 50px rgba(255,255,255,0.7);">Building a Wood Lathe from Scratch</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">Practical Skills</div><div class="pill">Prototyping</div><div class="pill">Welding</div><div class="pill">Casting</div><div class="pill">Machining</div><div class="pill">Equipment Design</div><div class="pill">CAD</div>
-                    <h2>About the Project</h2>
-                    <p>I started designing the wood lathe in year nine, and it was my first experience of using CAD to design a product specifically for manufacture. I re-used the motor from an e-scooter, but built every other part of the lathe - including the power supply and custom four-jaw chuck - from scratch.</p>
-                    <img src="img/portfolio/lathe/lathe-render.png" style="width: 75%;">
-                    <h3>Manufacture</h3>
-                    <p>After lots of testing, building the lathe allowed me to develop my knowledge of workshops and manufacturing processes such as welding, casting, turning and milling. I fitted the build in between other projects and coursework, and I was able to submit part of the work I did for my Design Technology Pre-U qualification. This and other projects also won me the school design technology prize.</p>
-                    <br>
-                </popup-box>
-            </popup>
-
-            <popup id="segway-popup"> <!--Done - Add Video-->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/segway/segway-main.png" style="margin: 120px; width: calc(100% - 240px); margin-bottom: 0; margin-top: 70px;">
-                        <div class="back" style="color: var(--the-dark);">< Back</div>
-                        <h2>Self-Balancing Segway Project</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">Coding: MicroPython</div><div class="pill">Problem Solving</div><div class="pill">Electronics: Feedback and Control</div>
-                    <h2>About the Project</h2>
-                    <p>Part of a module on systems and control, I used MicroPython to program a self-balancing segway using a PID controller. It had various modes, and could even dance to music.</p>
-                    <p>The Segway used Dr. Peter Cheung's <a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE2_EE/Pybench%20User's%20Guide.pdf">PyBench board</a>, which includes an IMU and motor drivers among other things, with two wheels and a 9V battery.</p>
-                    <p>I used a PID controller, with the current angle of the segway as its input, to achieve self-balancing. The 'P' - proportional - term simply allows the segway to react when it's angle relative to vertical is not 0, while the I - integral - term removes any steady-state error that would cause the segway to drift sideways. The D - differential - term allows the segway to react to a rate of change of angle rather than simply to the angle being displaced. These together make for a fast and steady response to any change of angle and keep the segway upright for extended periods of time.</p>
-                    <br>
-                </popup-box>
-            </popup>
-
-            <popup id="gizmo-popup"> <!-- Done -->
-                <popup-box>
-                    <div>
-                        <img src="img/portfolio/gizmo/gizmo-main.png" style="margin-top: -30px; margin-bottom: 0;">
-                        <div class="back">< Back</div>
-                        <h2>Physical Computing: The Useless Box</h2>
-                    </div>
-                    <h2>Skills Developed</h2>
-                    <div class="pill">CAD</div><div class="pill">Mechanical Design</div><div class="pill">Prototyping</div><div class="pill">Arduino</div><div class="pill">Electronics</div>
-                    <h2>About the Project</h2>
-                    <p>A its name suggests, the Useless Box is a box that does very little that is of use to anyone. The box can get progressively more ‘annoyed’ as the user turns the switch on - at first, it simply turns the switch back off but as it gets more exasperated about this not working, it starts to take more action - hiding the switch from the user, or even running away.</p>
-                    <p>The way the box reacts (how vigorously it turns the switch off) depends on how fast the user switches it on: the longer the user takes to turn the switch on, the ‘sneakier’ the box is about turning it off.</p>
-                    <img src="img/portfolio/gizmo/gizmo-mechs.png">
-                    <h3>Electronics</h3>
-                    <p>The whole box is controlled by an Arduino Uno, which takes inputs from the switch and ultrasonic distance sensor. These are then used to control one of four SG90 servos (switch off the switch, hide the switch, pop the eyes up, run away). All the servos are connected to a common power and ground rail, and their signal wires are routed to the arduino.</p>
-                    <h3>Modified Servo</h3>
-                    <img src="img/portfolio/gizmo/gizmo-servo.png" style="width: 75%;">
-                    <p>In order to use a regular SG90 servo to power the wheels, I modified it for continuous rotation by removing the potentiometer and replacing it with two 5 kΩ resistors. This means that the servo doesn’t know what angle it is at, and so continues rotating while any angle other than 90° is selected in the code.</p>
-                    <iframe style="width: 50vw; height: calc(50vw * 315/560)" src="https://www.youtube.com/embed/7Mt-p6ccgrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <br><br>
-                    <a class="button" href="doc/Gizmo_Poster.pdf">See Poster</a>
-                </popup-box>
-            </popup>
         </popups>
 
         <footer>

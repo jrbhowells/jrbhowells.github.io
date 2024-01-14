@@ -1,5 +1,4 @@
 ---
-# Tile:
 popup-id: "garmin-venio-popup"
 tile-id: "garmin-venio"
 
