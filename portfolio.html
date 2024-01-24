@@ -28,11 +28,6 @@
 
         </popups>
 
-        <footer>
-            <img src="img/logo-blue.png" style="height: 2vw; padding: 2vw; float: left;">
-            © J. Howells 2022. Coded by me, hosted by GitHub.
-        </footer>
-
         <script>
             const tiles = Array.from(document.getElementsByTagName('tile'))
             const backs = Array.from(document.getElementsByClassName('back'))
@@ -53,5 +48,5 @@
                 };
             })
         </script>
-    </body>
-</html>
+
+{% include footer.html %}

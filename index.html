@@ -27,11 +27,6 @@
             <p>You can see much of my portfolio on this website, but for a PDF copy or for my CV, please contact me on james.howells20@imperial.ac.uk</p>
         </main>
 
-        <footer>
-            <img src="img/logo-blue.png" style="height: 2vw; padding: 2vw; float: left;">
-            © J. Howells 2022. Coded by me, hosted by GitHub.
-        </footer>
-
         <script>
             Array.prototype.random = function () {
                 return this[Math.floor((Math.random()*this.length))];
@@ -42,5 +37,5 @@
 
             header.src = 'img/headers/' + images.random();
         </script>
-    </body>
-</html>
+
+{% include footer.html %}
