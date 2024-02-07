@@ -12,8 +12,7 @@ hero: "img/portfolio/ocado/bot.jpeg"
     <div>
         <img src="img/portfolio/ocado/warehouse.jpeg" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
-        <h2 style="background-color: rgba(0,0,0,0.5); box-shadow: 0 0 10px 10px rgba(0,0,0,0.5);">Ocado Technology: Mechanical Engineer</h2>
-        <p>*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
+        <h2 style="background-color: rgba(0,0,0,0.5); box-shadow: 0 0 10px 10px rgba(0,0,0,0.5); color: var(--off-white);">Ocado Technology: Mechanical Engineer</h2>
     </div>
     <h2>Skills Developed</h2>
     <div class="pill">CAD</div><div class="pill">Technical Drawing</div><div class="pill">Prototyping</div><div class="pill">Design for Additive Manufacture</div><div class="pill">MJF 3D Printing</div><div class="pill">Material Extrusion 3D Printing</div><div class="pill">Arduino</div><div class="pill">Robotics Design</div>
