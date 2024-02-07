@@ -1,22 +1,21 @@
 ---
-popup-id: "garmin-venio-popup"
-tile-id: "garmin-venio"
+popup-id: "masters-popup"
+tile-id: "masters"
 
-tile-sub: Industrial Design Engineering II
-tile-head: "Garmin* Venio: Navigation for Cyclists"
+tile-sub: "Master's Project"
+tile-head: "Soft Robotic Arm and Control"
 
-hero: "img/portfolio/ide2/venio-exploded.jpg"
+hero: "img/portfolio/masters/"
 ---
 
 <popup-box>
     <div>
-        <img src="img/portfolio/ide2/venio-rider.png" style="margin-top: -30px; margin-bottom: 0;">
+        <img src="img/portfolio/masters/" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
-        <h2 style="background-color: rgba(0,0,0,0.3); box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);">Garmin* Venio: Navigation for Urban Cyclists</h2>
-        <p>*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
+        <h2 style="background-color: rgba(0,0,0,0.3); box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);">Master's Project: Soft Robotic Arm and Control System</h2>
     </div>
     <h2>Skills Developed</h2>
-    <div class="pill">CAD</div><div class="pill">Technical Drawing</div><div class="pill">Rendering: KeyShot</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div><div class="pill">DFMA</div><div class="pill">Coding</div><div class="pill">Industrial Design</div>
+    <div class="pill">CAD</div><div class="pill">Mechanical Design</div><div class="pill">Pneumatic Design</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div>
     <h2>About the Project</h2>
     <p>Garmin Venio is a tool to help new and inexperienced cyclists navigate the roads of a city, and features built-in GPS and haptic feedback to guide users. As a group, we developed all aspects of the product, including branding, packaging, compliance and labelling, as well as producing a fully working prototype and a set of technical drawings for production.</p>
     <p>Venio is designed not to take attention away from the road: vibration motors in the silicone neck band guide the wearer with vibration patterns. Users set a destination on an app, and the route is then uploaded to Venio and processed locally.</p>
