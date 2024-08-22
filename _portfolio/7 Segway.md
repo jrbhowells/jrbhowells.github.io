@@ -22,3 +22,4 @@ hero: "img/portfolio/segway/segway-tile.png"
     <p>I used a PID controller, with the current angle of the segway as its input, to achieve self-balancing. The 'P' - proportional - term simply allows the segway to react when it's angle relative to vertical is not 0, while the I - integral - term removes any steady-state error that would cause the segway to drift sideways. The D - differential - term allows the segway to react to a rate of change of angle rather than simply to the angle being displaced. These together make for a fast and steady response to any change of angle and keep the segway upright for extended periods of time.</p>
     <br>
 </popup-box>
+

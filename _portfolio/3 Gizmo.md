@@ -29,3 +29,4 @@ hero: "img/portfolio/gizmo/gizmo-tile.png"
     <br><br>
     <a class="button" href="doc/Gizmo_Poster.pdf">See Poster</a>
 </popup-box>
+

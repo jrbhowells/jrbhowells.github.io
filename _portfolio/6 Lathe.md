@@ -23,3 +23,4 @@ hero: "img/portfolio/lathe/lathe-tile.jpg"
     <p>After lots of testing, building the lathe allowed me to develop my knowledge of workshops and manufacturing processes such as welding, casting, turning and milling. I fitted the build in between other projects and coursework, and I was able to submit part of the work I did for my Design Technology Pre-U qualification. This and other projects also won me the school design technology prize.</p>
     <br>
 </popup-box>
+

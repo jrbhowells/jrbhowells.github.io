@@ -32,4 +32,3 @@ hero: "img/portfolio/fea/fea-tile.png"
     <p>Mass of the second-iteration frame decreased by around 1%, and fundamental frequency was successfully increased by 12.3%. The fatigue life of this frame, when made out of aluminium and under the above loading conditions, was found to be 1.26 million cycles.</p>
     <a class="button" href="doc/FEA_Bike.pdf">Full Report</a>
 </popup-box>
-
