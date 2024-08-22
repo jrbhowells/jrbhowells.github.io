@@ -5,7 +5,7 @@ tile-id: "masters"
 tile-sub: "Master's Project"
 tile-head: "Soft Robotic Arm and Control"
 
-hero: "img/portfolio/masters/"
+hero: "img/portfolio/masters/X-1.png"
 ---
 
 <popup-box>
