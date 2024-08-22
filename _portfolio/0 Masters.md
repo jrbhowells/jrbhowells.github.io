@@ -12,7 +12,7 @@ hero: "img/portfolio/masters/Hero.png"
     <div>
         <img src="img/portfolio/masters/X-1.png" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
-        <h2 style="background-color: rgba(1,1,1,0.2); box-shadow: 0 0 10px 10px rgba(1,1,1,0.2);">Master's Project: Soft Robotic Arm and Control System</h2>
+        <h2 style="background-color: rgba(255,255,255,0.8); box-shadow: 0 0 20px 20px rgba(255,255,255,0.8);">Master's Project: Soft Robotic Arm and Control System</h2>
     </div>
     <h2>Skills Developed</h2>
     <div class="pill">CAD</div><div class="pill">Mechanical Design</div><div class="pill">Pneumatic Design</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div>
