@@ -37,7 +37,7 @@ hero: "img/portfolio/masters/Hero.png"
     <p>An area of soft robotics that needs considerable innovation is the semgent design, because the literature tends to focus on better control systems or applications for robots - not the segments themselves. For this project, I developed a new process for casting segments (the segment design itself represents an evolution on the common STIFF-FLOP design). The process cut manufacture time per segment from around a week to around one day, inclusing silicone curing times. The full casting process is described on the project's website (see below).</p>
     <img src="img/portfolio/masters/MadeSeg.png" style="width:80%;">
     <p>A full segment (shown in the above image) has six chambers inside it, which are connected in pairs to create three separate zones. Pressurising each zone can bend the robot in any direction. This gives the segment very good dexterity in navigating obstacles (see below), even at relatively low pressures (around 0.8 bar is sufficient in most applications).</p>
-    <img src="img/portfolio/masters/ObstacleWrap.png" style="width:350%;">
+    <img src="img/portfolio/masters/ObstacleWrap.png" style="width:35%;">
     <br><br>
     <p>The full report, as well as more information about parts of the system, can be found on the project website:</p>
     <a class="button" href="https://3-pscr.github.io/">Project Website</a>    
