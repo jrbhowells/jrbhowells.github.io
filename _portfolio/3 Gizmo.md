@@ -10,10 +10,10 @@ hero: "img/portfolio/gizmo/gizmo-tile.png"
 
 <popup-box>
     <div>
-        <img src="img/portfolio/gizmo/gizmo-main.png" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
         <h2>Physical Computing: The Useless Box</h2>
     </div>
+    <img src="img/portfolio/gizmo/gizmo-main.png" class="popup-main-img">
     <h2>Skills Developed</h2>
     <div class="pill">CAD</div><div class="pill">Mechanical Design</div><div class="pill">Prototyping</div><div class="pill">Arduino</div><div class="pill">Electronics</div>
     <h2>About the Project</h2>

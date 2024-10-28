@@ -367,11 +367,12 @@ popup-box {
 }
 
 .back {
-	margin-bottom: 0;
 	position: absolute;
-	top: 20px;
+	top: 30px;
 	left: 20px;
-	color: var(--off-white);
+	color: var(--the-dark);
+	transform: translate(0, 50%);
+	border: 1px solid green;
 }
 
 .back:hover {
@@ -382,24 +383,23 @@ popup-box img {
 	width: 100%;
 }
 
-popup-box div img {
+.popup-main-img {
 	width: calc(100% + 60px);
 	margin-left:-30px;
 }
 
 popup-box div h2 {
-	position: absolute;
-	top: 20px;
 	left: 50%;
-	transform: translate(-50%, 0);
+	transform: translate(0, -50%);
 	text-align: center;
+	border: 1px solid green;
 }
 
 popup-box h3 {
 	color: var(--the-blue);
 }
 
-popup-box div p {
+.popup-disclaimer {
 	position: absolute;
 	left: 0;
 	transform: translate(0, -68px);

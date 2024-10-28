@@ -10,10 +10,10 @@ hero: "img/portfolio/fea/fea-tile.png"
 
 <popup-box>
     <div>
-        <img src="img/portfolio/fea/fea-header.png" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
         <h2>Design of a Tandem Bicycle Frame using Finite Element Methods</h2>
     </div>
+    <img src="img/portfolio/fea/fea-header.png" class="popup-main-img">
     <h2>Skills Developed</h2>
     <div class="pill">SolidWorks Simulation</div><div class="pill">Technical Analysis</div><div class="pill">Report Writing</div><div class="pill">CAD & Rendering</div>
     <h2>About the Project</h2>

@@ -10,11 +10,11 @@ hero: "img/portfolio/ide2/venio-exploded.jpg"
 
 <popup-box>
     <div>
-        <img src="img/portfolio/ide2/venio-rider.png" style="margin-top: -30px; margin-bottom: 0;">
         <div class="back">< Back</div>
-        <h2 style="background-color: rgba(0,0,0,0.3); box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);">Garmin* Venio: Navigation for Urban Cyclists</h2>
-        <p>*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
+        <h2>Garmin* Venio: Navigation for Urban Cyclists</h2>
     </div>
+    <img src="img/portfolio/ide2/venio-rider.png" class="popup-main-img">
+    <p class="popup-disclaimer">*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
     <h2>Skills Developed</h2>
     <div class="pill">CAD</div><div class="pill">Technical Drawing</div><div class="pill">Rendering: KeyShot</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div><div class="pill">DFMA</div><div class="pill">Coding</div><div class="pill">Industrial Design</div>
     <h2>About the Project</h2>

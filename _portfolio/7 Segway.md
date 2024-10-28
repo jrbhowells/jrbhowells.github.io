@@ -10,10 +10,10 @@ hero: "img/portfolio/segway/segway-tile.png"
 
 <popup-box>
     <div>
-        <img src="img/portfolio/segway/segway-main.png" style="margin: 120px; width: calc(100% - 240px); margin-bottom: 0; margin-top: 70px;">
-        <div class="back" style="color: var(--the-dark);">< Back</div>
+        <div class="back">< Back</div>
         <h2>Self-Balancing Segway Project</h2>
     </div>
+    <img src="img/portfolio/segway/segway-main.png" class="popup-main-img">
     <h2>Skills Developed</h2>
     <div class="pill">Coding: MicroPython</div><div class="pill">Problem Solving</div><div class="pill">Electronics: Feedback and Control</div>
     <h2>About the Project</h2>

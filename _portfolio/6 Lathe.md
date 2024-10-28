@@ -10,10 +10,10 @@ hero: "img/portfolio/lathe/lathe-tile.jpg"
 
 <popup-box>
     <div>
-        <img src="img/portfolio/lathe/lathe-main.JPG" style="margin-top: -30px; margin-bottom: 0;">
-        <div class="back" style="color: var(--the-dark);">< Back</div>
-        <h2 style="background-color: rgba(255,255,255,0.7); box-shadow: 0 0 50px 50px rgba(255,255,255,0.7);">Building a Wood Lathe from Scratch</h2>
+        <div class="back">< Back</div>
+        <h2>Building a Wood Lathe from Scratch</h2>
     </div>
+    <img src="img/portfolio/lathe/lathe-main.JPG" class="popup-main-img">
     <h2>Skills Developed</h2>
     <div class="pill">Practical Skills</div><div class="pill">Prototyping</div><div class="pill">Welding</div><div class="pill">Casting</div><div class="pill">Machining</div><div class="pill">Equipment Design</div><div class="pill">CAD</div>
     <h2>About the Project</h2>
