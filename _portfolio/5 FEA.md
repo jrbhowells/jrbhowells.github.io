@@ -9,9 +9,9 @@ hero: "img/portfolio/fea/fea-tile.png"
 ---
 
 <popup-box>
-    <div>
-        <div class="back">< Back</div>
+    <div class="popup-navbar">
         <h2>Design of a Tandem Bicycle Frame using Finite Element Methods</h2>
+        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/fea/fea-header.png" class="popup-main-img">
     <h2>Skills Developed</h2>

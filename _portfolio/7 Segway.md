@@ -9,9 +9,9 @@ hero: "img/portfolio/segway/segway-tile.png"
 ---
 
 <popup-box>
-    <div>
-        <div class="back">< Back</div>
+    <div class="popup-navbar">
         <h2>Self-Balancing Segway Project</h2>
+        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/segway/segway-main.png" class="popup-main-img">
     <h2>Skills Developed</h2>

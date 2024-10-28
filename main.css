@@ -83,18 +83,29 @@ tile img {
 	position: relative;
 	border-radius: 0.4vw;
 	width: 100%;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 tile-txt {
 	visibility: hidden;
+	opacity: 0;
 
 	position: absolute;
-	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: 30%;
 	max-width: 45vw;
-	height: calc(43vw * 339/559);
 	z-index: 2;
-	color: var(--off-white);
 	text-align: center;
+	padding: 5px;
+
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 10px;
 }
 
 .single {
@@ -109,7 +120,6 @@ tile-txt {
 }
 
 .tile-sub {
-	padding-top: calc((43vw * 155/256)/2 - 2.5em);
 	padding-bottom: 0.5em;
 }
 
@@ -122,14 +132,10 @@ tile:hover {
 	-moz-transition: all 0.4s ease;
 }
 
-tile:hover img {
-	filter: brightness(50%);
-	-webkit-filter: brightness(50%);
-	-moz-filter: brightness(50%);
-}
-
 tile:hover tile-txt {
 	visibility: visible;
+	opacity: 1;
+	transition: all 1s ease;
 }
 
 .tile-4 {
@@ -346,7 +352,7 @@ popup {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.5);
+	/* background-color: rgba(0,0,0,0.5); */
 }
 
 popup:target {
@@ -360,23 +366,44 @@ popup-box {
 	left: 5%;
 	right: 5%;
 	background-color: var(--off-white);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 	padding: 30px;
+	padding-top: 0;
 	overflow-x: scroll;
 	text-align: center;
 }
 
+.popup-navbar {
+	position: fixed;
+	width: 90vw;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 60px;
+	margin-left:-30px;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
 .back {
 	position: absolute;
-	top: 30px;
+	top: 0;
 	left: 20px;
 	color: var(--the-dark);
-	transform: translate(0, 50%);
-	border: 1px solid green;
+	line-height: 60px;
 }
 
 .back:hover {
 	cursor: pointer;
+}
+
+popup-box div h2 {
+	left: 50%;
+	text-align: center;
+	line-height: 60px;
+	margin: 0;
 }
 
 popup-box img {
@@ -386,13 +413,6 @@ popup-box img {
 .popup-main-img {
 	width: calc(100% + 60px);
 	margin-left:-30px;
-}
-
-popup-box div h2 {
-	left: 50%;
-	transform: translate(0, -50%);
-	text-align: center;
-	border: 1px solid green;
 }
 
 popup-box h3 {

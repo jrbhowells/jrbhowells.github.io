@@ -9,9 +9,9 @@ hero: "img/portfolio/lathe/lathe-tile.jpg"
 ---
 
 <popup-box>
-    <div>
-        <div class="back">< Back</div>
+    <div class="popup-navbar">
         <h2>Building a Wood Lathe from Scratch</h2>
+        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/lathe/lathe-main.JPG" class="popup-main-img">
     <h2>Skills Developed</h2>

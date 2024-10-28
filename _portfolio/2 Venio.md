@@ -9,9 +9,9 @@ hero: "img/portfolio/ide2/venio-exploded.jpg"
 ---
 
 <popup-box>
-    <div>
-        <div class="back">< Back</div>
+    <div class="popup-navbar">
         <h2>Garmin* Venio: Navigation for Urban Cyclists</h2>
+        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/ide2/venio-rider.png" class="popup-main-img">
     <p class="popup-disclaimer">*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>

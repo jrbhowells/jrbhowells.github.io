@@ -9,11 +9,11 @@ hero: "img/portfolio/masters/Hero.png"
 ---
 
 <popup-box>
-    <div>
+    <div class="popup-navbar">
+        <h2>Master's Project: Soft Robotic Arm and Control System</h2>
         <div class="back">< Back</div>
-        <img src="img/portfolio/masters/X-1.png" class="popup-main-img">
     </div>
-    <h2>Master's Project: Soft Robotic Arm and Control System</h2>
+    <img src="img/portfolio/masters/X-1.png" class="popup-main-img">
     <h2>Skills Developed</h2>
     <div class="pill">CAD</div><div class="pill">Mechanical Design</div><div class="pill">Pneumatic Design</div><div class="pill">Prototyping</div><div class="pill">3D Printing</div><div class="pill">Electronics Design</div>
     <h2>About the Project</h2>

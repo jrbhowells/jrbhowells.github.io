@@ -9,9 +9,9 @@ hero: "img/portfolio/gizmo/gizmo-tile.png"
 ---
 
 <popup-box>
-    <div>
-        <div class="back">< Back</div>
+    <div class="popup-navbar">
         <h2>Physical Computing: The Useless Box</h2>
+        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/gizmo/gizmo-main.png" class="popup-main-img">
     <h2>Skills Developed</h2>
