@@ -7,12 +7,11 @@
             <h1>Portfolio</h1>
             <p>This page showcases some of my most relevant projects in detail. These projects, along with others I have done, can be found on the Projects page.</p>
             
-            {% for folio in site.portfolio %}<a href="#{{folio.popup-id}}"><tile id="{{folio.tile-id}}">
+            {% for folio in site.portfolio %}<a href="#{{folio.popup-id}}"><tile id="{{folio.tile-id}}" style="background-image: url('{{folio.hero}}');">
                 <tile-txt>
                     <div class="tile-sub">{{folio.tile-sub}}</div>
                     <div class="tile-head">{{folio.tile-head}}</div>
                 </tile-txt>
-                <img src="{{folio.hero}}">
             </tile></a>{% endfor %}
         </main>
 
