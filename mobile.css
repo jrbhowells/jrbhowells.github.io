@@ -1,0 +1,40 @@
+@media handheld,
+screen and (max-width: 900px) {
+/* 1. Generals */
+
+    header h3 {
+        font-size: 40px;
+        margin: 0;
+	    padding: 0;
+        transform: translate(0, 0);
+    }
+
+/* 1.1. Tiles */
+    tile {
+        border-radius: 20px;
+        width: 90vw;
+        background-size: 90vw;
+        box-shadow: 0 8px 60px rgba(0, 0, 0, 0.2);
+    }
+
+	tile-txt {
+        /* margin-top: 50%; */
+        visibility: visible;
+        opacity: 1;
+    
+        position: absolute;
+        transform: translate(-50%, calc((45vw / 1.66) - 50%));
+        z-index: 2;
+        /* text-align: center; */
+        padding: 5px;
+    
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+    
+        /* max-width: min(400px, 80vw); */
+        width: min(300px, 70vw);
+    }
+}
