@@ -112,8 +112,8 @@ tile {
 	border-radius: 10px;
 } */
 
-@media only screen 
-and (max-width : 600px) {
+@media only screen
+and (max-width: 900px) {
 	tile-txt {
 		visibility: visible;
 		opacity: 1;
@@ -129,14 +129,15 @@ and (max-width : 600px) {
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
 		border-radius: 10px;
+
+		/* max-width: min(400px, 80vw); */
+		width: min(300px, 70vw);
 	}
 }
 
 .tile-head {
 	font-family: Didot, serif;
-	font-size: 2em;
-	padding-left: 5%;
-	padding-right: 5%;
+	font-size: xx-large;
 }
 
 .tile-sub {
@@ -144,7 +145,7 @@ and (max-width : 600px) {
 }
 
 @media only screen 
-and (min-width : 600px) {
+and (min-width : 900px) {
 	tile-txt {
 		visibility: hidden;
 		opacity: 0;
