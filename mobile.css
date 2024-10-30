@@ -1,5 +1,4 @@
-@media handheld,
-screen and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 /* 1. Generals */
 
     header h3 {
