@@ -11,7 +11,6 @@ hero: "img/portfolio/masters/Hero.png"
 <popup-box>
     <div class="popup-navbar">
         <h2>Master's Project: Soft Robotic Arm and Control System</h2>
-        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/masters/X-1.png" class="popup-main-img">
     <h2>Skills Developed</h2>

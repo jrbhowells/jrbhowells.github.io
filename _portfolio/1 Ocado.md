@@ -11,7 +11,6 @@ hero: "img/portfolio/ocado/bot.jpeg"
 <popup-box>
     <div class="popup-navbar">
         <h2>Ocado Technology: Mechanical Engineer</h2>
-        <div class="back">< Back</div>
     </div>
     <img src="img/portfolio/ocado/warehouse.jpeg" class="popup-main-img">
     <h2>Skills Developed</h2>
