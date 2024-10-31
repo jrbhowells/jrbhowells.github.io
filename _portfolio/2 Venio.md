@@ -23,7 +23,7 @@ hero: "img/portfolio/ide2/venio-exploded.jpg"
     <h3>Electronics</h3>
     <img src="img/portfolio/ide2/venio-techdraw.png" style="width:50%;">
     <p>Venio uses an ESP32, a GPS module and two vibration motors, powered by a 500 mAh battery. While these exact components wouldn’t be used in a commercial product, components were selected based chiefly on price and availability: Venio is targeted at less-professional sportspeople (unlike other Garmin products) so a low price point was essential.</p>
-    <img src="img/portfolio/ide2/venio-pseudocode.png" style="width:15%;">
+    <img src="img/portfolio/ide2/venio-pseudocode.png" style="width:35%;">
     <p>The device is programmed in MicroPython: this pseudocode gives a brief explanation of what it does.</p>
     <h3>DFMA</h3>
     <p>Fitting the electronics into a small casing proved extremely difficult and took over a hundred iterations in CAD before I was happy with the result (in order to do this, I had to create accurate models of all the electronic components too). Final design and technical drawings fully specified all parts of the casing and product, and costing and injection moulding simulations were used to further refine the design.</p>

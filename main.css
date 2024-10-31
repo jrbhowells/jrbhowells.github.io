@@ -31,9 +31,9 @@ header h1 {
 
 header h3 {
 	display: inline-block;
-	font-size: 20px;
+	font-size: 25px;
     margin-top: 0.5vw;
-	transform: translate(0, -30%);
+	transform: translate(0, -5px);
 }
 
 .button {
@@ -71,7 +71,6 @@ tile {
 	aspect-ratio: 1.66;
 	background-size: max(40vw, min(400px, 80vw));
 	min-width: min(400px, 80vw);
-	/* padding-top: 339/559; */
 	display: inline-block;
 	margin: 2%;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -81,7 +80,7 @@ tile {
 	-moz-transition: all 0.2s ease;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 601px) {
 	tile-txt {
 		visibility: hidden;
 		opacity: 0;
@@ -94,7 +93,6 @@ tile {
 		height: 30%;
 		max-width: 45vw;
 		z-index: 2;
-		/* text-align: center; */
 		padding: 5px;
 
 		background: rgba(255, 255, 255, 0.5);
@@ -291,7 +289,7 @@ popup {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	/* background-color: rgba(0,0,0,0.5); */
+	background-color: rgba(0,0,0,0.2);
 }
 
 popup:target {
@@ -306,19 +304,19 @@ popup-box {
 	right: 5%;
 	background-color: var(--off-white);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-	border-radius: 10px;
+	border-radius: 20px;
 	padding: 30px;
 	padding-top: 0;
 	overflow-x: scroll;
 	text-align: center;
+	overscroll-behavior: contain;
 }
 
 .popup-navbar {
 	position: fixed;
 	width: 90vw;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	height: 60px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 	margin-left:-30px;
 	background: rgba(255, 255, 255, 0.5);
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -326,23 +324,37 @@ popup-box {
 	-webkit-backdrop-filter: blur(5px);
 }
 
+.popup-navbar h2 {
+	left: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px;
+}
+
 .back {
 	position: absolute;
-	top: 0;
-	left: 20px;
+	top: 2.5%;
+	right: 5%;
+	transform: translate(0, -50%);
+
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px;
+
 	color: var(--the-dark);
-	line-height: 60px;
+	background: url('img/xmark.png'), rgba(255, 255, 255, 0.5);
+	background-size: 10px;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 }
 
 .back:hover {
 	cursor: pointer;
-}
-
-popup-box div h2 {
-	left: 50%;
-	text-align: center;
-	line-height: 60px;
-	margin: 0;
 }
 
 popup-box img {

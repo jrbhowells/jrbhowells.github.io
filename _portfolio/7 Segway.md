@@ -15,7 +15,7 @@ hero: "img/portfolio/segway/segway-tile.png"
     </div>
     <img src="img/portfolio/segway/segway-main.png" class="popup-main-img">
     <h2>Skills Developed</h2>
-    <div class="pill">Coding: MicroPython</div><div class="pill">Problem Solving</div><div class="pill">Electronics: Feedback and Control</div>
+    <div class="pill">Coding: MicroPython</div><div class="pill">Problem Solving</div><div class="pill">Electronics</div><div class="pill">Feedback and Control</div>
     <h2>About the Project</h2>
     <p>Part of a module on systems and control, I used MicroPython to program a self-balancing segway using a PID controller. It had various modes, and could even dance to music.</p>
     <p>The Segway used Dr. Peter Cheung's <a href="http://www.ee.ic.ac.uk/pcheung/teaching/DE2_EE/Pybench%20User's%20Guide.pdf">PyBench board</a>, which includes an IMU and motor drivers among other things, with two wheels and a 9V battery.</p>

@@ -1,10 +1,12 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 /* 1. Generals */
 
+    header h1 {
+        font-size: xx-large;
+    }
+
     header h3 {
-        font-size: 40px;
-        margin: 0;
-	    padding: 0;
+        font-size: x-large;
         transform: translate(0, 0);
     }
 
@@ -17,14 +19,12 @@
     }
 
 	tile-txt {
-        /* margin-top: 50%; */
         visibility: visible;
         opacity: 1;
     
         position: absolute;
         transform: translate(-50%, calc((45vw / 1.66) - 50%));
         z-index: 2;
-        /* text-align: center; */
         padding: 5px;
     
         background: rgba(255, 255, 255, 0.5);
@@ -33,7 +33,25 @@
         -webkit-backdrop-filter: blur(5px);
         border-radius: 10px;
     
-        /* max-width: min(400px, 80vw); */
         width: min(300px, 70vw);
+    }
+
+/* 3.2. Popups */
+    .popup-main-img {
+        margin-top: 40px;
+    }
+
+    .popup-disclaimer {
+        position: relative;
+        left: auto;
+        transform: translate(0, 0);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: inherit;
+    }
+
+    popup-box>img {
+        min-width: 80%;
     }
 }
