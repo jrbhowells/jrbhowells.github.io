@@ -190,10 +190,8 @@ a:hover {
 
 main {
 	left: 0;
-	padding-top: 70px;
-	/* width: 95%; */
 	padding: 2.5%;
-    padding-top: 0.5%;
+    padding-top: 70px;
 	display: block;
 	overflow: auto;
 }
@@ -239,6 +237,10 @@ main h1, h2 {
 
 }
 
+.minus {
+	display: none;
+}
+
 .cbox h4 {
 	margin: 0;
 	line-height: 50px;
@@ -255,10 +257,6 @@ main h1, h2 {
 	cursor: pointer;
 }
 
-.minus {
-	display: none;
-}
-
 .cbox .project {
 	border-left: 2px solid var(--the-dark);
 	padding-left: 2%;
@@ -273,7 +271,7 @@ main h1, h2 {
 }
 
 .cbox h3 {
-	display:inline;
+	display: inline;
 	line-height: 24px;
 }
 
