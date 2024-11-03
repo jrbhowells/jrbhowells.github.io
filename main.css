@@ -18,24 +18,6 @@ h1, h2, h3, h4 {
 	font-family: Didot, serif;
 }
 
-main h1, h2 {
-	color: var(--the-blue);
-}
-
-header h1 {
-	display: inline-block;
-	font-size: 55px;
-	margin: 0;
-	padding: 0;
-}
-
-header h3 {
-	display: inline-block;
-	font-size: 25px;
-    margin-top: 0.5vw;
-	transform: translate(0, -5px);
-}
-
 .button {
 	display: inline-block;
 	position: relative;
@@ -134,7 +116,6 @@ header {
 	width: 100%;
 	background-color: var(--off-white);
 	color: var(--the-blue);
-	border-bottom: 1px solid var(--the-blue)
 }
 
 .logo {
@@ -160,9 +141,39 @@ header {
 	100% {opacity: 1;}
 }
 
+header h1 {
+	display: inline-block;
+	font-size: 55px;
+	margin: 0;
+	padding: 0;
+}
+
+header h3 {
+	display: inline-block;
+	font-size: 25px;
+    margin-top: 0.5vw;
+	transform: translate(0, -5px);
+}
+
 .navbar {
-    padding-top: 0;
+	z-index: 99;
+	position: fixed;
+	width: 100%;
 	padding-left: 2.5vw;
+
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	/* border-radius: 10px; */
+}
+
+.fluid {
+	position: relative;
+}
+
+.navbar h3 {
+	margin: 0;
 }
 
 a {
@@ -179,37 +190,64 @@ a:hover {
 
 main {
 	left: 0;
-	width: 95%;
+	margin-top: 70px;
+	/* width: 95%; */
 	padding: 2.5%;
     padding-top: 0.5%;
 	display: block;
 	overflow: auto;
 }
- /* 3.1. Projects page */
 
- left {
+main h1, h2 {
+	color: var(--the-blue);
+}
+
+ /* 3.1. Projects page */
+.zone {
+	vertical-align: top;
 	position: relative;
-	float: left;
-	width: 48.75%;
-	min-height: 60vh;
+	display: inline-block;
+}
+
+.left {
+	width: calc(30% - 20px);
+	margin-right: 20px;
+}
+.right {
+	width: calc(68%);
 }
 
 .cbox {
 	height: 50px;
-	border: 1px solid var(--the-dark);
-	border-radius: 5px;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
+	margin-bottom: 10px;
 	overflow: hidden;
+
+	/* border: 1px solid var(--the-dark); */
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	/* backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px); */
+	border-radius: 10px;
 }
 
-.cbox h2, h4 {
-	line-height: 0px;
+.cbox-head {
+	width: 100%;
+	line-height: 50px;
+	border-bottom: 1px solid black;
+
+}
+
+.cbox h4 {
+	margin: 0;
+	line-height: 50px;
+	display: inline-block;
 }
 
 .plus, .minus {
-	text-align: right;
-	line-height: 0px;
+	float: right;
+	font-size: xx-large;
 }
 
 .plus:hover, .minus:hover {
@@ -221,22 +259,17 @@ main {
 	display: none;
 }
 
-hr {
-	border: none;
-	border-top: 0.5px solid var(--the-dark);
-}
-
-.cbox div {
+.cbox .project {
 	border-left: 2px solid var(--the-dark);
 	padding-left: 2%;
-	height: 24px;
 }
 
-.cbox div:hover {
+.cbox .project:hover {
 	border-left: 4px solid var(--the-blue);
 	color: var(--the-blue);
 	padding-left: calc(2% - 2px);
 	cursor: pointer;
+	transition: all 0.2s ease;
 }
 
 .cbox h3 {
@@ -244,34 +277,18 @@ hr {
 	line-height: 24px;
 }
 
-.ooa {
-	color: gray;
-}
-
-.cbox p {
-	vertical-align: top;
-	margin: 0;
-}
-
-right {
-	position: relative;
-	float: right;
-	width: 48.75%;
-	text-align: center;
-}
-
-right .button {
-	position: relative;
-	left: 0;
-	transform: translate(0,0);
-}
-
 .focus {
-	border: 1px solid var(--the-dark);
-	border-radius: 5px;
+	position: relative;
 	padding: 2.5%;
 	padding-top: 0%;
 	display: none;
+
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	/* backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px); */
+	border-radius: 10px;
 }
 
 .focus img {

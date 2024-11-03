@@ -3,22 +3,18 @@
 ---
 {% include header.html %}
 
+        <!-- This page needs re-building at some point. -->
+        
         <main>
             <h1 style="text-align: center;">Projects</h1>
             <p style="text-align: center;">I have done many practical, design and technical projects, some of which I have explained below. Projects marked with an asterisk were done as part of my MEng, while most of the remainder are things I have done in my spare time.</p>
             <p style="text-align: center;">For more detailed explanations of a few of these, and information about my most recent projects, have a look at the Portfolio page.</p><br>
-            <left>
+            <div class="zone left">
                 <div class="cbox" id="wood">
-                    <table style="width: 100%;">
-                        <td><h4>Practical Projects</h4></td>
-                        <td>
-                            <h2 class="minus" id="wood-">‒</h2>
-                            <h2 class="plus" id="wood+">+</h2>
-                        </td>
-                    </table>
-                    <hr>
+                    <h4>Practical Projects</h4>
+                    <h4 class="minus" id="wood-">‒</h4>
+                    <h4 class="plus" id="wood+">+</h4>
                     <p>I've done several practical, workshop-based projects over the last few years.</p>
-                    <br>
                     <div class="project" id="lathe">
                         <h3>Home-Made Wood Lathe</h3>
                     </div>
@@ -36,18 +32,11 @@
                     </div>
                     <br>
                 </div>
-                <br>
                 <div class="cbox" id="code">
-                    <table style="width: 100%;">
-                        <td><h4>Code</h4></td>
-                        <td>
-                            <h2 class="plus" id="code+">+</h2>
-                            <h2 class="minus" id="code-">‒</h2>
-                        </td>
-                    </table>
-                    <hr>
+                    <h4>Code</h4>
+                    <h2 class="plus" id="code+">+</h2>
+                    <h2 class="minus" id="code-">‒</h2>
                     <p>A few coding projects I've worked on.</p>
-                    <br>
                     <div class="project" id="website">
                         <h3>This Website</h3>
                     </div>
@@ -61,18 +50,11 @@
                     </div>
                     <br>
                 </div>
-                <br>
                 <div class="cbox" id="conc">
-                    <table style="width: 100%;">
-                        <td><h4>Design & Concept</h4></td>
-                        <td>
-                            <h2 class="plus" id="conc+">+</h2>
-                            <h2 class="minus" id="conc-">‒</h2>
-                        </td>
-                    </table>
-                    <hr>
+                    <h4>Design & Concept</h4>
+                    <h2 class="plus" id="conc+">+</h2>
+                    <h2 class="minus" id="conc-">‒</h2>
                     <p>Some other concept projects.</p>
-                    <br>
                     <div class="project" id="venio">
                         <h3>*Garmin Venio: Haptic Guidance for Cycling</h3>
                     </div>
@@ -96,16 +78,10 @@
                 </div>
                 <br>
                 <div class="cbox" id="reps">
-                    <table style="width: 100%;">
-                        <td><h4>Reports</h4></td>
-                        <td>
-                            <h2 class="plus" id="reps+">+</h2>
-                            <h2 class="minus" id="reps-">‒</h2>
-                        </td>
-                    </table>
-                    <hr>
+                    <h4>Reports</h4>
+                    <h2 class="plus" id="reps+">+</h2>
+                    <h2 class="minus" id="reps-">‒</h2>
                     <p>Coursework investigations and reports.</p>
-                    <br>
                     <div class="project" id="fea">
                         <h3>*Finite Element Analysis: Design of a Bicycle Frame</h3>
                     </div>
@@ -131,8 +107,16 @@
                     </div>
                     <br>
                 </div>
-            </left>
-            <right>
+            </div>
+            <div class="zone right">
+
+                {% for project in site.projects %}
+                <div class="focus" id="{{folio.id}}-f"> <!--Done-->
+                    {{folio.content}}
+                </div>
+                {% endfor %}
+
+
                 <!--Woodwork-->
                 <div class="focus" id="lathe-f"> <!--Done-->
                     <h2>Home-Made Wood Lathe</h2>
@@ -279,7 +263,7 @@
                     <p>A Mechanics deliverable for which I had to calculate the location of the second bounce of a ball bearing rolled down a tube of specified length and height off ground. My prediction was accurate.</p>
                     <a class="button" href="doc/SMech_Bouncer.pdf">Full Report</a>
                 </div>
-            </right>
+            </div>
         </main>
 
         <script>
@@ -290,8 +274,8 @@
             const cboxes = Array.from(document.getElementsByClassName('cbox'))
             
             document.getElementById('conc').style.height = 'auto';
-            document.getElementById('conc+').style.display = 'none';
-            document.getElementById('conc-').style.display = 'block';
+            document.getElementById('conc+').style.display = 'inline-block';
+            document.getElementById('conc-').style.display = 'none';
 
             cboxes.forEach((element) => {
                 element.onclick = function() {
@@ -299,11 +283,11 @@
                     if (document.getElementById(theID).style.height == 'auto') {
                         document.getElementById(theID).style.height = '50px';
                         document.getElementById(theID + '-').style.display = 'none';
-                        document.getElementById(theID + '+').style.display = 'block'; 
+                        document.getElementById(theID + '+').style.display = 'inline-block'; 
                     } else {
                         document.getElementById(theID).style.height = 'auto';
                         document.getElementById(theID + '+').style.display = 'none';
-                        document.getElementById(theID + '-').style.display = 'block';
+                        document.getElementById(theID + '-').style.display = 'inline-block';
                     }
                 }
             })
