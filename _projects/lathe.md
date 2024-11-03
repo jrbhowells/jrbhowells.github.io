@@ -1,6 +1,6 @@
 ---
 name: "Home-Made Wood Lathe"
-id: "lathe"
+div-id: "lathe"
 ---
 
 <h2>Home-Made Wood Lathe</h2>

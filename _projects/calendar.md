@@ -1,6 +1,6 @@
 ---
 name: "*Calendar / Reminders Webapp"
-id: "calendar"
+div-id: "calendar"
 ---
 
 <h2>Calendar / Reminders Webapp</h2>

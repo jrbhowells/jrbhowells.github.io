@@ -1,6 +1,6 @@
 ---
 name: "*Carbon-neutral Housing Study"
-id: "carbon"
+div-id: "carbon"
 ---
 
 <h2>Carbon-neutral Housing Study</h2>

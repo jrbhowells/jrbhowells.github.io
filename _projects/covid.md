@@ -1,6 +1,6 @@
 ---
 name: "Coronavirus Data Scraper"
-id: "covid"
+div-id: "covid"
 ---
 
 <h2>Coronavirus Data Scraper</h2>

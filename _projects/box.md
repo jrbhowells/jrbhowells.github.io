@@ -1,6 +1,6 @@
 ---
 name: "Secret Compartment Box"
-id: "box"
+div-id: "box"
 ---
 
 <h2>Secret Compartment Box</h2>

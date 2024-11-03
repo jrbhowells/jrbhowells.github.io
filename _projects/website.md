@@ -1,6 +1,6 @@
 ---
 name: "This Website"
-id: "website"
+div-id: "website"
 ---
 
 <h2>This Website</h2>

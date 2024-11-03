@@ -1,6 +1,6 @@
 ---
 name: "Recycled Teak Garden Bench"
-id: "bench"
+div-id: "bench"
 ---
 
 <h2>Recycled Teak Garden Bench</h2>

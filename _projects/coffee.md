@@ -1,6 +1,6 @@
 ---
 name: "Coffee Table"
-id: "coffee"
+div-id: "coffee"
 ---
 
 <h2>Coffee Table</h2>

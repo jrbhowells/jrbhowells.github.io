@@ -130,10 +130,14 @@
             const pluses = Array.from(document.getElementsByClassName('plus'))
             const projects = Array.from(document.getElementsByClassName('project'))
             const cboxes = Array.from(document.getElementsByClassName('cbox'))
+
+            minuses.forEach((element) => {
+                element.style.display = 'none';
+            })
             
             document.getElementById('conc').style.height = 'auto';
-            document.getElementById('conc+').style.display = 'inline-block';
-            document.getElementById('conc-').style.display = 'none';
+            document.getElementById('conc-').style.display = 'inline-block';
+            document.getElementById('conc+').style.display = 'none';
 
             cboxes.forEach((element) => {
                 element.onclick = function() {

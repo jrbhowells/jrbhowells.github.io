@@ -1,6 +1,6 @@
 ---
 name: "*Fully Sustainable Eco-Home"
-id: "ecohome"
+div-id: "ecohome"
 ---
 
 <h2>Fully Sustainable Eco-Home</h2>

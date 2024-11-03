@@ -1,6 +1,6 @@
 ---
 name: "*Christmas in a Box PSS"
-id: "ciab"
+div-id: "ciab"
 ---
 
 <h2>Christmas in a Box PSS</h2>
