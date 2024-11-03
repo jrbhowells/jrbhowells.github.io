@@ -11,9 +11,11 @@
             <p style="text-align: center;">For more detailed explanations of a few of these, and information about my most recent projects, have a look at the Portfolio page.</p><br>
             <div class="zone left">
                 <div class="cbox" id="wood">
-                    <h4>Practical Projects</h4>
-                    <h4 class="minus" id="wood-">‒</h4>
-                    <h4 class="plus" id="wood+">+</h4>
+                    <div class="cbox-head">
+                        <h4>Practical Projects</h4>
+                        <h4 class="minus" id="wood-">‒</h4>
+                        <h4 class="plus" id="wood+">+</h4>
+                    </div>
                     <p>I've done several practical, workshop-based projects over the last few years.</p>
                     <div class="project" id="lathe">
                         <h3>Home-Made Wood Lathe</h3>
@@ -33,9 +35,11 @@
                     <br>
                 </div>
                 <div class="cbox" id="code">
-                    <h4>Code</h4>
-                    <h2 class="plus" id="code+">+</h2>
-                    <h2 class="minus" id="code-">‒</h2>
+                    <div class="cbox-head">
+                        <h4>Code</h4>
+                        <h4 class="plus" id="code+">+</h4>
+                        <h4 class="minus" id="code-">‒</h4>
+                    </div>
                     <p>A few coding projects I've worked on.</p>
                     <div class="project" id="website">
                         <h3>This Website</h3>
@@ -51,9 +55,11 @@
                     <br>
                 </div>
                 <div class="cbox" id="conc">
-                    <h4>Design & Concept</h4>
-                    <h2 class="plus" id="conc+">+</h2>
-                    <h2 class="minus" id="conc-">‒</h2>
+                    <div class="cbox-head">
+                        <h4>Design & Concept</h4>
+                        <h4 class="plus" id="conc+">+</h4>
+                        <h4 class="minus" id="conc-">‒</h4>
+                    </div>
                     <p>Some other concept projects.</p>
                     <div class="project" id="venio">
                         <h3>*Garmin Venio: Haptic Guidance for Cycling</h3>
@@ -76,11 +82,12 @@
                     </div>
                     <br>
                 </div>
-                <br>
                 <div class="cbox" id="reps">
-                    <h4>Reports</h4>
-                    <h2 class="plus" id="reps+">+</h2>
-                    <h2 class="minus" id="reps-">‒</h2>
+                    <div class="cbox-head">
+                        <h4>Reports</h4>
+                        <h4 class="plus" id="reps+">+</h4>
+                        <h4 class="minus" id="reps-">‒</h4>
+                    </div>
                     <p>Coursework investigations and reports.</p>
                     <div class="project" id="fea">
                         <h3>*Finite Element Analysis: Design of a Bicycle Frame</h3>
@@ -109,160 +116,11 @@
                 </div>
             </div>
             <div class="zone right">
-
                 {% for project in site.projects %}
-                <div class="focus" id="{{folio.id}}-f"> <!--Done-->
+                <div class="focus" id="{{folio.id}}-f">
                     {{folio.content}}
                 </div>
                 {% endfor %}
-
-
-                <!--Woodwork-->
-                <div class="focus" id="lathe-f"> <!--Done-->
-                    <h2>Home-Made Wood Lathe</h2>
-                    <img src="img/portfolio/lathe/lathe-main.JPG">
-                    <p>I started this project aged 14 in year nine, and it took me several years to complete in fits and starts. I re-used the motor from an e-scooter, but built every other part of the lathe - including the power supply and custom four-jaw chuck - from scratch.</p>
-                    <a class="button" href="portfolio.html#lathe-popup">More Information</a>
-                </div>
-
-                <div class="focus" id="coffee-f"> <!--Done-->
-                    <h2>Coffee Table</h2>
-                    <img src="img/portfolio/table/table-3.JPG" style="width: 100%;">
-                    <p>Part of my A-level course, I made this coffee table in walnut and ash, with a tempered glass top. The joinery was by far the most complex task: the bottom of each leg features a hybrid mitre/bridle joint, and the tabletop itself is joined using a mitre joint with ash keys. All joinery had to be cut by hand due to tool-use restrictions.</p>
-                    <img src="img/portfolio/table/table-diagram.png" style="width: 100%;">
-                    <img src="img/portfolio/table/table-1.JPG" style="width: 100%;">
-                </div>
-
-                <div class="focus" id="box-f">
-                    <h2>Secret Compartment Box</h2>
-                    <p>As a free-time project in my school's DT workshop, I made a small box in sapele, beech and ash with my initials inlaid in the top. The project took me several weeks, fitted in between other commitments.</p>
-                    <img src="img/portfolio/box-top.png" style="width: 100%;">
-                    <img src="img/portfolio/box-side.png" style="width: 100%;">
-                </div>
-
-                <div class="focus" id="bench-f">
-                    <h2>Recycled Teak Garden Bench</h2>
-                    <p>My iGCSE Resistant Materials (DT) coursework, this bench was made from fully recycled teak: the boards had been used for flooring. They were quite thin so needed laminating together into beams. Overall it was a fun project and I was really happy with the result.</p>
-                    <img src="img/portfolio/gcse-bench.jpg" style="width: 100%;">
-                </div>
-
-                <!--Code-->
-                <div class="focus" id="website-f"> <!--Done-->
-                    <h2>This Website</h2>
-                    <p>
-                        This website is my own creation. I built it using HTML and CSS, with JavaScript for
-                        interactive elements, and it is made available through GitHub Pages with Jekyll. Because I've coded it
-                        from scratch, with no frameworks, there may be some compatibility issues with some browsers
-                        etc. - if you find any, please let me know! I have some experience with JavaScript and PHP,
-                        as well as (very limited) knowledge of Flask and Django, although as there is no backend on
-                        this site I haven't used either of these.
-                    </p>
-                </div>
-
-                <div class="focus" id="weather-f">
-                    <h2>Machine Learning Weather Forecast</h2>
-                    <p>A work-in-progress project, I am working on predicting the weather using machine learning, and displaying this on a website. Data come from the Met Office's free DataPoint API, which provides hour-by-hour readings for current weather at around 150 locations nationwide. So far, my efforts have centred on gathering the data from the Met Office using a Raspberry Pi and displaying the data.
-                    </p>
-                </div>
-
-                <div class="focus" id="calendar-f"> <!--Done-->
-                    <h2>Calendar / Reminders Webapp</h2>
-                    <p>
-                        A complete HTML, CSS and JavaScript webapp for organising tasks in a calendar format. This
-                        project was for a computing module I took as part of my degree, and used an neDB database
-                        to store information. Meshing a computer's idealised vision of time with a calendar (e.g.
-                        accounting for leap years) proved to be the most challenging part.
-                        <br><br>
-                        <tile>
-                            <img src="img/portfolio/todo-webapp/dark-mode.png">
-                        </tile><tile>
-                            <img src="img/portfolio/todo-webapp/task-info.png">
-                        </tile>
-                    </p>
-                </div>
-                
-                <div class="focus" id="covid-f"> <!--Done-->
-                    <h2>Coronavirus Data Scraper</h2>
-                    <p>In early February 2020, 2019-nCoV (now called COVID-19) was spreading rapidly. Accurate data were hard to find at the time, so I decided to create an extremely simple scraping algorithm in Python to log current COVID cases, hospitalisations and deaths.</p>
-                    <img src="img/portfolio/covid-collector/covid-case.png" style="width: 100%;">
-                    <p>The program has been running since, saving data to an Excel spreadsheet. Far more accurate data are now available, but I have maintained the program and kept it running for interest. The above graph shows cases, hospitalisatons and deaths over time, and the CFR (case fatality rate, reported deaths per reported case) is below. The large gap between days ~640 and ~760 are where I lost data to a faulty SSD.</p>
-                    <img src="img/portfolio/covid-collector/covid-cfr.png" style="width: 100%;">
-                    <p>Graphs last updated 03/02/2022.</p>
-                </div>
-
-                <!--Design-->
-                <div class="focus" id="venio-f"> <!--Done-->
-                    <h2>Garmin* Venio: Navigation for Urban Cyclists</h2>
-                    <p>*Garmin were not engaged in any consultancy or collaborative capacity in this project and the outcome is in no way endorsed by them. Any publicity is limited to personal and academic use.</p>
-                    <img src="img/portfolio/ide2/venio-rider.png">
-                    <p>Venio is a tool to help new and inexperienced cyclists navigate in a city, with built-in GPS and haptic feedback to guide users. We developed all aspects of the product, including branding, packaging, compliance and labelling, as well as producing a fully working prototype and a set of technical drawings for production.</p>
-                    <a class="button" href="portfolio.html#garmin-venio-popup">More Information</a>
-                </div>
-
-                <div class="focus" id="oculate-f" style="display: block;"> <!--Done-->
-                    <h2>Oculate: Navigation for Urban Cyclists</h2>
-                    <img src="img/portfolio/ide1/ide1-glasses.png">
-                    <p>Oculate is a set of two products to help cyclists find their way around urban streets. It consists of smart glasses which display navigation and hazard information to the user, and a handlebar console that controls the navigation and handlebar-end indicators.</p>
-                    <img src="img/portfolio/ide1/ide1-indicator.png">
-                    <br><br>
-                    <a class="button" href="portfolio.html#oculate-popup">More Information</a>
-                </div>
-
-                <div class="focus" id="ecohome-f"> <!--Done-->
-                    <h2>Fully Sustainable Eco-Home</h2>
-                    <img src="img/portfolio/c3p/c3p-tile.png">
-                    <p>Part of my Pre-U in Art & Design (DT), this was a project I'd wanted to do for a long time. I analysed the exact needs of a 2-bedroom home and devised ways of providing all of this in a fully-sustainable way, with no reliance on external utilities. In addition to this, I designed and rendered the home and produced a specification for its construction.</p>
-                </div>
-
-                <div class="focus" id="careware-f"> <!--Done-->
-                    <h2>CareWare: Space Saving in Small Kitchens</h2>
-                    <img src="img/portfolio/careware/careware-tile.png">
-                    <p>A design project forming part of my degree, I worked in a group to create a human-centred, space-saving device for small kitchens. The final product was a multipurpose sink cover, which allowed the sink to be used as extra counter space or a chopping board - or could be rotated through 140 degrees to become a drying rack beside the sink.</p>
-                </div>
-
-                <div class="focus" id="ciab-f">
-                    <h2>Christmas in a Box PSS</h2>
-                    <p>Part of a sustainable design module for my degree, I worked in a group to create a product-service system focused on delivering a more sustainable Christmas at a lower price than existing options. More detail coming soon.</p>
-                </div>
-
-                <!--Reports-->
-                <div class="focus" id="reveng-f"> <!--Done-->
-                    <h2>RevEng: Reverse Engineering</h2>
-                    <img src="img/portfolio/pmat/rev-teardown.png">
-                    <p>A deliverable for a Production and Materials module, I tore down a cheap trim router, analysing its components, material make-up and manufacturing processes, before making recommendations for its improvement. For the project, I created a full bill of materials for the router, and analysed the embodied energy of each component, and concluded that the greatest saving from an embodied energy point of view was to be made by changing the material of the main housing from steel to PA6-GF30.</p>
-                    <a class="button" href="doc/PMat_Reveng.pdf">Full Report</a>
-                </div>
-
-                <div class="focus" id="materialise-f"> <!--Done-->
-                    <h2>Materialise: Materials Analysis</h2>
-                    <p>Another deliverable for the above Production and Materials module, I was asked to provide a material recommendation for an 'elegant pair of scissors.' I based my selection on the materials available in Granta's EduPack software. This was the first deliverable of the degree, so there are many things I would now do differently (though the report did still get a First).</p>
-                    <a class="button" href="doc/PMat_Materialise.pdf">Full Report</a>
-                </div>
-
-                <div class="focus" id="carbon-f">
-                    <h2>Carbon-neutral Housing Study</h2>
-                    <p>Part of a thermofluids module, I analysed a typical rural bungalow's energy needs, and came up with several interventions to improve its energy performance. These ranged from better insulation to harnessing hydroelectricity and heat pumps. My report was used as an example report for teaching the module the next year, but as the house in question is my home and the report includes images and renders, I am not making it available here.</p>
-                </div>
-
-                <div class="focus" id="vehicle-f"> <!--Done-->
-                    <h2>Vehicle Aerodynamics Simulation</h2>
-                    <img src="img/portfolio/cfd/cfd-cut-velocity.png">
-                    <p>A study involving designing a car in SolidWorks and analysing its aerodynamic performance. I sketched a concept from four elevations (front, back, side, top) before importing these into SolidWorks and using projected sketches to create a 3D object. This could then be analysed using CFD techniques.</p>
-                    <a class="button" href="portfolio.html#cfd-popup">More Information</a>
-                </div>
-
-                <div class="focus" id="fea-f"> <!--Done-->
-                    <h2>Design of a Tandem Bicycle Frame using Finite Element Methods</h2>
-                    <img src="img/portfolio/fea/fea-header.png">
-                    <p>I designed a tandem bike frame and analysed it with finite element methods, before making a second iteration, aiming to decrease frame mass and improve fundamental frequency.</p>
-                    <a class="button" href="portfolio.html#fea-popup">More Information</a>
-                </div>
-
-                <div class="focus" id="bouncer-f"> <!--Done-->
-                    <h2>Bouncer: Mechanics Report on Ball-Bearing Bounces</h2>
-                    <p>A Mechanics deliverable for which I had to calculate the location of the second bounce of a ball bearing rolled down a tube of specified length and height off ground. My prediction was accurate.</p>
-                    <a class="button" href="doc/SMech_Bouncer.pdf">Full Report</a>
-                </div>
             </div>
         </main>
 
