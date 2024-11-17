@@ -10,9 +10,8 @@ div-id: "calendar"
     to store information. Meshing a computer's idealised vision of time with a calendar (e.g.
     accounting for leap years) proved to be the most challenging part.
     <br><br>
-    <tile>
-        <img src="img/portfolio/todo-webapp/dark-mode.png">
-    </tile><tile>
-        <img src="img/portfolio/todo-webapp/task-info.png">
-    </tile>
+    <div>
+        <img src="img/portfolio/todo-webapp/dark-mode.png" style="display: inline-block; width: 40%;">
+        <img src="img/portfolio/todo-webapp/task-info.png" style="display: inline-block; width: 40%;">
+    </div>
 </p>

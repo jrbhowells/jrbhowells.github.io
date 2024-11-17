@@ -37,7 +37,7 @@ hero: "img/portfolio/masters/Hero.png"
     <img src="img/portfolio/masters/MadeSeg.png" style="width:80%;">
     <p>A full segment (shown in the above image) has six chambers inside it, which are connected in pairs to create three separate zones. Pressurising each zone can bend the robot in any direction. This gives the segment very good dexterity in navigating obstacles (see below), even at relatively low pressures (around 0.8 bar is sufficient in most applications).</p>
     <img src="img/portfolio/masters/ObstacleWrap.png" style="width:35%;">
-    <br><br>
+    <!-- <br><br>
     <p>The full report, as well as more information about parts of the system, can be found on the project website:</p>
-    <a class="button" href="https://3-pscr.github.io/">Project Website</a>    
+    <a class="button" href="https://3-pscr.github.io/">Project Website</a>     -->
 </popup-box>
