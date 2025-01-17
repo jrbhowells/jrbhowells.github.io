@@ -110,8 +110,11 @@ tile {
 
 /* 2. Header */
 
-.mob-banner {
-	display: none;
+/* Hide warning banner on wide screens */
+@media screen and (min-width: 601px) {
+	.mob-banner {
+		display: none;
+	}
 }
 
 header {
