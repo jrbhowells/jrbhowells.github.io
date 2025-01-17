@@ -10,6 +10,14 @@
         transform: translate(0, 0);
     }
 
+    .mob-banner {
+        display: auto;
+        padding: 5px;
+        text-align: center;
+        background-color: var(--the-blue);
+        color: var(--off-white);
+    }
+
 /* 1.1. Tiles */
     tile {
         border-radius: 20px;

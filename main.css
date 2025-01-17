@@ -110,6 +110,10 @@ tile {
 
 /* 2. Header */
 
+.mob-banner {
+	display: none;
+}
+
 header {
 	top: 0;
 	left: 0;
